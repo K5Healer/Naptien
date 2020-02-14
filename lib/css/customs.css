@@ -1,0 +1,228 @@
+.container {
+    max-width: 1024px;
+}
+
+textarea.deductDiscountPercentExcel {
+    position: absolute;
+    height: 100%;
+    resize: none;
+    bottom: 0;
+}
+.tr-row-import-excel{
+    position: relative;
+    padding: 0px;
+}
+
+.blue{
+    color: #1f96f3
+}
+#my-paging .pagination{
+    float: right;
+}
+
+.waiting .progress-bar{
+    background-color: #2196F3;
+}
+
+
+.is-process .progress-bar{
+
+}
+
+.success .progress-bar{
+    background-color: #4CAF50;
+}
+
+
+.failed .progress-bar{
+    background-color: #f00;
+}
+
+
+.pendding .progress-bar{
+    background-color: #ffbc00;
+}
+
+
+.cancel .progress-bar{
+    background-color: #b3b3b3;
+}
+
+
+.discount-real .item{
+    margin: 0 20px;
+}
+#tranfer-amount .col-form-label{
+    text-align: right;
+}
+
+.btn-warning {
+    color: #fff;
+    background-color: #f0ad4e !important;
+    border-color: #eea236;
+}
+.service-charge{
+    background: #e2e2e2;
+    color: #ff0000;
+}
+
+.service-charge .list{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.clear-both{
+    display: block;
+    clear: both;
+}
+
+.service-charge .item{ 
+    float: left;
+    width: 30%;
+}
+.service-charge  .note{
+    text-align: center;
+    color: #0e0c6a;
+}
+.table-desktop{
+
+}
+
+.table-mobile{
+    display: none;
+}
+.mobile{
+    display: none;
+}
+.maintain_btc img {
+    width: 130px;
+    height: 40px;
+    margin-right: 10px;
+}
+.maintain_btc img {
+    max-width: 100%;
+}
+@media(max-width: 768px ) {
+    .service-charge .list{
+        width: 90%;
+    }
+    .discount-real .item{
+        width: 100%;
+        display: block
+    }
+    .home-container .col-md-3{
+        width: 50%;
+    }
+    .home-container .col-md-3 .image{
+        width: 100px !important;
+        height: 100px !important;
+        margin: 0 auto!important;
+    }
+    .home-container #pills-service .card {
+        width: 100%;
+    }
+    #tranfer-amount .col-form-label{
+        text-align: left;
+    }
+    .maintain_btc {
+        padding: 0;
+    }
+}
+
+@media (max-width: 560px ) {
+    .tr-cmgs{
+        display: none;
+    }
+    .tr-type{
+        display: none;
+    }
+    .col-xs-12{
+        width: 100%;
+    }
+    .form-group-xs-12{
+        width: 100%;
+    }
+    .input-xs-12{
+        width: 100% !important;
+        max-width:100% !important;
+    }
+
+    #datetopicker,
+    #datefrompicker{
+        max-width: 100% !important; 
+    }
+    .service-charge .item{ 
+        float: left;
+        width: 100%;
+    }
+    .math-card-table td,.math-card-table th{
+        min-width: 80px;
+    }
+
+    .mobile-justify-content-between{
+        display: table !important;
+    }
+    .mobile-justify-content-between form.form-inline{
+        display:  block;
+    }
+    .mobile-justify-content-between .form-group{
+        margin: 3px 0px!important;
+    }
+
+    .mobile-justify-content-between .form-group button{
+        width: 100%;
+    }
+    .mobile-justify-content-between .custom-tmp{
+        display: inherit;
+    }
+    .table-desktop{
+        display: block;
+    }
+
+    .table-mobile{
+        display: none;
+    }
+    .table-mobile .math-card-table td,  .table-mobile .math-card-table th{
+        width: auto;
+        min-width: 40px;
+    }
+
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display: block;
+    }
+    .mn-nav {
+        margin: 0;
+        padding: 0px 15px;
+    }
+    nav.navbar{
+        padding-top: 0px!important;
+    }
+    .home-container .mb-4, .home-container .my-4 {
+        margin-bottom: 0.5rem!important;
+    }
+    .home-container [class*="col-"] {
+        padding: 0 4px;
+    }
+    .home-container .pt-3, .home-container .py-3 {
+        padding-top: 0rem!important;
+    }
+    .mw-100{
+        width: 100% !important;
+    }
+}
+.btn-download{
+    cursor: pointer;
+}
+.btn-download a {
+    color: white !important;
+}
+.check-debt .progress{
+    width: 70px;
+    margin: 0 auto;
+
+
+}

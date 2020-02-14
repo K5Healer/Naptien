@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body{
+    color: #036;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+}
+
+.container{
+    max-width: 970px;
+}
+
+#pills-service .card{
+    background-color: #f1f2f6;
+    border-radius: 10px !important;
+    
+}
+
+a {
+    color: #036 !important;
+    text-decoration: none!important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #00b3ee !important;
+    background-color: #eeeeee;
+    border-radius: 0 !important;
+}
+
+.nav-pills .nav-link:hover, .nav-pills .show>.nav-link {
+    color: #00b3ee !important;
+    background-color: #eeeeee;
+    border-radius: 0 !important;
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .show>.nav-link {
+    color: #00b3ee !important;
+    background-color: #eeeeee;
+    border-radius: 0 !important;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: #00b3ee !important;
+    background-color: #eeeeee;
+    border-radius: 0 !important;
+}
+
+#datetopicker{ 
+    max-width: 100px !important;
+    background-color: #eeeeee;
+}
+
+#datefrompicker{ 
+    max-width: 100px !important;
+    background-color: #eeeeee;
+}
+
+input,select{
+    border-radius: 0 !important;
+}
+
+hr{
+    background-color: #0e0d6a;
+    height: 1px;
+    margin: 0 0 10px;
+    width: 100%;
+}
+
+
+.no-bg{
+    background-color: #fff !important;
+}
+
+.no-border{
+    border: none !important;
+}
+
+h4,h5{
+    color: #555565;
+}
+
+.image{
+    width: 150px !important;
+    height: 150px !important;
+}
+
+#pills-service .card:hover{
+    background-color: #0e0d6a;
+    
+}
+
+#pills-service .card:hover a{
+    color: #fff !important;
+}
+
+.btn-my{
+    color: white !important;
+    background-color: #0e0d6a;
+    border-radius: 5px !important;
+    padding: 5px 25px;
+}
+
+.mn-label{
+    text-align: right !important;
+}
+
+.mn-group{
+    text-align: center !important;
+}
+
+.mn-nav{
+    margin: 0;
+    padding: 0;
+}
+
+.btn-no-rounded{
+    color: white !important;
+    background-color: #0e0d6a;
+    border-radius: 0px !important;
+    padding: 5px 10px !important;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.green{
+    color: green !important;
+}
+
+.red{
+    color: red !important;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+.btn-green{
+    background-color: #5cb85c !important;
+    color: #fff !important;
+}
+
+.btn-blue{
+    background-color: #337ab7 !important;
+    color: #fff !important;
+}
+
+.mn-button{
+    text-align: center !important;
+}
+
+footer{
+    font-size: 0.7rem;
+}
+
+.gray{
+    color: #777685 !important;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ccc !important;
+    opacity: 1; /* Firefox */
+
+  }
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #ccc !important;
+
+  }
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #ccc !important;
+
+}
+
+.btn-orange{
+    background-color: #f0ad4e !important;
+}
+
+.btn-white{
+    background-color: #fff !important;
+    border: 1px #ccc solid;
+    color: #0e0d6a !important;
+}
+
+.nav>li>a{
+    padding: 10px 15px;
+}
+
+.nav>li>a:hover {
+    color: #00b3ee!important;
+}
+
+.navbar-nav>li>a{
+    padding: 10px 15px;
+}
+
+.navbar-nav>li>a:hover {
+    color: #00b3ee!important;
+}
+
+.text-middle {
+    vertical-align: middle !important;
+}
+
+#orderId {
+    height: 33px !important;
+    width: 150px;
+}
+
+.cus-width {
+    width: 25% !important; 
+}
+/*---Media Queries --*/
+
+
+@media (max-width: 992px) {
+    .mn-label{
+        text-align: left !important;
+    }
+    .mn-button{
+        text-align: left !important;
+    }
+    .mn-group{
+        text-align: left !important;
+    }
+    .mn-nav{
+        margin: 0;
+        padding: 15px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .mn-label{
+        text-align: left !important;
+    }
+    .mn-button{
+        text-align: left !important;
+    }
+    .mn-group{
+        text-align: left !important;
+    }
+    .mn-nav{
+        margin: 0;
+        padding: 15px;
+    }
+    .respon_vinaeload_mobi_hide {
+        display: none;
+    }
+    .respon_vinaeload_mobi_show {
+        display: table-row;
+    }
+}
+
+@media (max-width: 576px) {
+    .mn-label{
+        text-align: left !important;
+    }
+    .mn-button{
+        text-align: left !important;
+    }
+    .mn-group{
+        text-align: left !important;
+    }
+    .mn-nav{
+        margin: 0;
+        padding: 15px;
+    }
+    .cus-width {
+        width: 100% !important; 
+    }
+}
+
+@media (max-width: 360px) {
+    .mn-label{
+        text-align: left !important;
+    }
+    .mn-button{
+        text-align: left !important;
+    }
+    .mn-group{
+        text-align: left !important;
+    }
+    .mn-nav{
+        margin: 0;
+        padding: 15px;
+    }
+    .cus-width {
+        width: 100% !important; 
+    }
+}
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    margin: 0!important;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 0rem 1rem;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+
