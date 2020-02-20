@@ -1,0 +1,454 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Thanh toán cước di động trả sau</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                
+        <meta property="og:image" content="lib/img/tet_2020.png?v=1581482784" />
+        <meta property="image" content="lib/img/tet_2020.png?v=1581482784" />
+        <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="lib/css/bootstrap-datepicker.min.css">
+        <link rel="stylesheet" href="lib/css/style.css">
+        <link rel="stylesheet" href="lib/css/jquery.growl.css">
+        <link rel="stylesheet" href="lib/css/customs.css">
+        <link rel="stylesheet" type="text/css" href="css/update.css">
+        <!--Scripts-->    
+        
+        <script type="text/javascript" src="lib/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="lib/js/popper.min.js"></script>
+        <script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="lib/js/bootstrap-datepicker.min.js"></script>
+        <script type="text/javascript" src="lib/js/jquery.growl.js"></script>
+        <script type="text/javascript" src="lib/js/bootbox.min.js"></script>
+        <script type="text/javascript" src="lib/js/main.js"></script>
+    </head>
+    <body>
+        
+        <!--Navigation-->
+        <nav class="navbar mn-nav navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <div id="navbarMain" class=" navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><i class="fa fa-home"></i> Trang chủ</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">                                             
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                A Minh (Số dư: <b>12,800đ</b>)
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="info-user.html"><i class="fa fa-user"></i> Thông tin tài khoản</a>
+                                <a class="dropdown-item" href="change-password.html"><i class="fa fa-lock"></i> Thay đổi mật khẩu</a>
+                                <a class="dropdown-item" href="index-dang-nhap.html"><i class="fa fa-sign-out"></i> Đăng xuất</a>
+                            </div>
+                        </li>       
+                    </ul>
+                </div>
+            </div>
+        </nav>
+ 
+    <marquee style="width: 100%;padding: 10px 0;background-color: lightblue;">
+       <strong style="color: red;">chiết khấu thanh toán cước: 25%</strong>
+    </marquee>  
+    
+    <!--Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light pt-3">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="lib/img/dichvuthe.png" width="130" height="80"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSecondary">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSecondary">
+                    <ul class="nav nav-pills mb-3 ml-auto" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-service-tab" href="index.html" >Dịch vụ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " id="pills-price-list-tab" href="bang-gia.html">Bảng giá</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " id="pills-history-tab"  href="lich-su.html" >Lịch sử</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " id="pills-guideline-tab"  href="huong-dan.html" >Hướng dẫn</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link " id="pills-news-tab"  href="tin-tuc.html" >Tin tức</a>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container home-container">
+            <hr >
+            
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'Viettel')">Viettel</button>
+                <button class="tablinks" onclick="openCity(event, 'Mobi')">Mobi Phone</button>
+                <button class="tablinks" onclick="openCity(event, 'Vina')">Vina Phone</button>
+                <button class="tablinks" onclick="openCity(event, 'Vietnamobile')">Vietnamobile</button>
+            </div>
+
+            <div id="Viettel" class="tabcontent">
+                <div class="row mt-5 px-2">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2 mt-2">
+                        <label>Số Điện Thoại:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="tel" class="form-control" name="phone">
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row mt-3 px-2">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2 mt-2">
+                        <label>Mệnh giá thẻ:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <select class="form-control">
+                            <option>Tất cả</option>
+                            <option>Mệnh giá khác</option>
+                            <option>10,000</option>
+                            <option>20,000</option>
+                            <option>50,000</option>
+                            <option>100,000</option>
+                            <option>200,000</option>
+                            <option>500,000</option>
+                            <option>1,000,000</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row mt-3 px-2">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2 mt-2">
+                        <label>Số Tiền Cần Nạp:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" class="form-control" name="money">
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row mt-3 px-2">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2 mt-2">
+                        <label>Pass:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="password" class="form-control" name="pass">
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row mt-3 px-2">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2 mt-2">
+                        <label>Chiết Khấu (%):</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" class="form-control" name="number">
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+
+                <div class="row mt-5 mb-3 px-2">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-primary">Tạm dừng</button>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-primary">Tiếp tục</button>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-primary">Hủy đơn</button>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+
+            <div id="Mobi" class="tabcontent">
+                <div class="row mt-5 px-2">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2 mt-2">
+                        <label>Số Điện Thoại:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="tel" class="form-control" name="phone">
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row mt-3 px-2">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2 mt-2">
+                        <label>Mệnh giá thẻ:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <select class="form-control">
+                            <option>Tất cả</option>
+                            <option>10,000</option>
+                            <option>20,000</option>
+                            <option>50,000</option>
+                            <option>100,000</option>
+                            <option>200,000</option>
+                            <option>500,000</option>
+                            <option>1,000,000</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row mt-3 px-2">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2 mt-2">
+                        <label>Số Tiền Cần Nạp:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" class="form-control" name="money">
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row mt-3 px-2">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2 mt-2">
+                        <label>Pass:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="password" class="form-control" name="pass">
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row mt-3 mb-5 px-2">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2 mt-2">
+                        <label>Chiết Khấu (%):</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" class="form-control" name="number">
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row mt-5 mb-3 px-2">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-primary">Tạm dừng</button>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-primary">Tiếp tục</button>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-primary">Hủy đơn</button>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+
+            <div id="Vina" class="tabcontent">
+                <div class="row mt-5 px-2">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2 mt-2">
+                        <label>Số Điện Thoại:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="tel" class="form-control" name="phone">
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row mt-3 px-2">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2 mt-2">
+                        <label>Mệnh giá thẻ:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <select class="form-control">
+                            <option>Tất cả</option>
+                            <option>10,000</option>
+                            <option>20,000</option>
+                            <option>50,000</option>
+                            <option>100,000</option>
+                            <option>200,000</option>
+                            <option>500,000</option>
+                            <option>1,000,000</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row mt-3 px-2">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2 mt-2">
+                        <label>Số Tiền Cần Nạp:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" class="form-control" name="money">
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row mt-3 px-2">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2 mt-2">
+                        <label>Pass:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="password" class="form-control" name="pass">
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row mt-3 mb-5 px-2">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2 mt-2">
+                        <label>Chiết Khấu (%):</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" class="form-control" name="number">
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row mt-5 mb-3 px-2">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-primary">Tạm dừng</button>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-primary">Tiếp tục</button>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-primary">Hủy đơn</button>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+
+            <div id="Vietnamobile" class="tabcontent">
+                <div class="row mt-5 px-2">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2 mt-2">
+                        <label>Số Điện Thoại:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="tel" class="form-control" name="phone">
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row mt-3 px-2">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2 mt-2">
+                        <label>Mệnh giá thẻ:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <select class="form-control">
+                            <option>Tất cả</option>
+                            <option>10,000</option>
+                            <option>20,000</option>
+                            <option>50,000</option>
+                            <option>100,000</option>
+                            <option>200,000</option>
+                            <option>500,000</option>
+                            <option>1,000,000</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row mt-3 px-2">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2 mt-2">
+                        <label>Số Tiền Cần Nạp:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" class="form-control" name="money">
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row mt-3 px-2">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2 mt-2">
+                        <label>Pass:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="password" class="form-control" name="pass">
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row mt-3 mb-5 px-2">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2 mt-2">
+                        <label>Chiết Khấu (%):</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" class="form-control" name="number">
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row mt-5 mb-3 px-2">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-primary">Tạm dừng</button>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-primary">Tiếp tục</button>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-primary">Hủy đơn</button>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <button type="button" class="btn btn-primary"><a href="lich-su.html" style="color: white !important;">Lịch Sử</a></button>
+        </div>
+
+<footer>
+    <div class="container">
+        <br>
+        <hr>
+        <p class="text-center gray">COPYRIGHT ©  CORPORATION. ALL RIGHTS RESERVED</p>
+    </div>
+</footer>
+<script>
+    $('#datefrompicker').datepicker({
+        weekStart: 1,
+        daysOfWeekHighlighted: "",
+        autoclose: true,
+        todayHighlight: true,
+    });
+    $('#datefrompicker').datepicker();
+
+    $('#datetopicker').datepicker({
+        weekStart: 1,
+        daysOfWeekHighlighted: "",
+        autoclose: true,
+        todayHighlight: true,
+    });
+    $('#datetopicker').datepicker();
+
+    $('.datetopicker').datepicker({
+        weekStart: 1,
+        daysOfWeekHighlighted: "",
+        autoclose: true,
+        todayHighlight: true,
+    });
+</script>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+        
+    </body>
+    <script src="lib/my/custom-date.js"></script>
+</html>
