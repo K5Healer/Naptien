@@ -80,6 +80,9 @@ h4,h5{
 }
 
 .image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 150px !important;
     height: 150px !important;
 }
@@ -175,13 +178,13 @@ footer{
     color: #ccc !important;
     opacity: 1; /* Firefox */
 
-  }
-  
+}
+
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: #ccc !important;
 
-  }
-  
+}
+
 ::-ms-input-placeholder { /* Microsoft Edge */
     color: #ccc !important;
 
@@ -326,9 +329,502 @@ figure {
 }
 
 
+.history-login{
+    padding: 10px;
+    color: #036;
+    margin-left: 19px;
+    border-radius: 10px;
+    transition: 0.2s;
+    outline: none!important;
+}
+.history-login:hover{
+    color: #fff;
+    background: #0e0d6a;
+    
+}
+.registration{
+    border: none;
+    color: #036;
+    background: none;
+    font-size: 1rem;
+    outline: none!important;
+}
+.registration:hover{
+    color: #fff;
+    background: none;
+    text-decoration-line: none;
+    
+}
+.modal-content{
+    background: #f1f2f6;
+
+}
+.modal-content h4{
+    color: #036;
+}
+
+.modal-footer button{
+    background: #ddd;
+    transition: .2s;
+    color: #036;
+}
+.modal-footer button:hover{
+    background: #0e0d6a;
+    color: #fff;
+}
+.news-slider{
+    margin-bottom: 30px;
+}
+.img-news{
+    display: block;
+    width: 100%;
+}
+.img-news-mini{
+    display: block;
+    width: 100%;
+}
+.img-news-mini img{
+    width: 100%;
+}
+.img-news img{
+    width: 100%;
+}
+.slick-prev{
+    position: absolute;
+    z-index: 999;
+    right: 0;
+    top: 28%;
+    border: none;
+    padding: 10px 20px;
+    outline: none;
+    opacity: 0.5;
+    background: no-repeat;
+}
+.slick-next{
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    top: 28%;
+    border: none;
+    padding: 10px 20px;
+    outline: none;
+    opacity: 0.5;
+    background: no-repeat;
+}
+.slick-next-event{
+    position: absolute;
+    z-index: 999;
+    left: -14px;
+    top: 43%;
+    border: none;
+    padding: 1px 10px;
+    outline: none;
+    opacity: 0.5;
+    background: #00000075;
+}
+.slick-prev-event{
+    position: absolute;
+    z-index: 999;
+    right: -17px;
+    top: 43%;
+    border: none;
+    padding: 1px 10px;
+    outline: none;
+    opacity: 0.5;
+    background: #00000075;
+}
+.icon-slick{
+    font-size: 80px;
+    color: #fff;
+}
+.icon-slick-event{
+    font-size: 30px;
+    color: #fff;
+}
+.text-news{
+    margin-top: 10px;
+}
+.news-banner{
+    box-shadow: 0 3px 15px 0 rgba(0,0,0,.05);
+}
+.news-event-slider{
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #0000000f;
+    padding-top: 20px;
+}
+.text-title{
+    background: #eee;
+    display: block;
+    padding: 11px;
+    text-transform: uppercase;
+}
+
+.text-title h4{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.item-content {
+    padding: 10px;
+}
+.item-content .img{
+    float: left;
+}
+.item-content img{
+    display: block;
+    width: 70px;
+}
+.text-content{
+    margin-left: 80px;
+}
+.spacer {
+  clear: both; 
+}
+.main-news{
+    margin-bottom: 20px;
+}
+.news-item{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.news-item img{
+    display: block;
+    width: 100%;
+}
+.news-item-content{
+    margin-top: 10px;
+}
+.time{
+    color: #7d7979;
+}
+.title{
+    margin-top: 20px;
+}
+
+.list-like{
+    list-style-type: none;
+    padding-left: 10px;
+}
+.list-like li{
+    display: inline-block;
+    margin-right: 10px;
+}
+ul li .like-share{
+    padding: 4px 9px;
+    background: #eeeeee;
+    border-radius: 5px;
+    transition: .2s;
+}
+ul li .like-share:hover{
+    color: #fff!important;
+    background-color: rgb(14, 13, 106);
+
+}
+h2{
+    font-size: 1rem;
+}
+.item-img{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+.item-img img{
+    width: 100%;
+    cursor: -webkit-zoom-in;
+}
+.tag h4{
+    display: inline-block;
+    font-size: 15px;
+}
+h4{
+    font-size: 18px;
+}
+.tag ul{
+    display: inline-block;
+}
+.tag ul a{
+    padding: 4px 9px;
+    background: #eeeeee;
+    border-radius: 5px;
+    transition: .2s;
+}
+.tag ul a:hover{
+    color: #fff!important;
+    background-color: rgb(14, 13, 106);
+}
+.back-to-top{
+    width: 45px;
+    height: 45px;
+    background: #036;
+    position: fixed;
+    cursor: pointer;
+    top: 35%;
+    border-radius: 50%;
+    color: #fff!important;
+    right: 20px;
+    transition: 2s;
+    z-index: 999;
+}
+.back-to-top i{
+    font-size: 30px;
+    left: 13px;
+    top: 5px;
+    position: absolute;
+}
 
 
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+/*reset css*/
+div,label{margin:0;padding:0;}
+h1{font-size:1.5em;margin:10px;}
+/****** Style Star Rating Widget *****/
+#rating{border:none;float:left;}
+#rating>input{display:none;}/*ẩn input radio - vì chúng ta đã có label là GUI*/
+#rating>label:before{margin:5px;font-size:1.25em;font-family:FontAwesome;display:inline-block;content:"\f005";}/*1 ngôi sao*/
+#rating>.half:before{content:"\f089";position:absolute;}/*0.5 ngôi sao*/
+#rating>label{color:#ddd;float:right;}/*float:right để lật ngược các ngôi sao lại đúng theo thứ tự trong thực tế*/
+/*thêm màu cho sao đã chọn và các ngôi sao phía trước*/
+#rating>input:checked~label,
+#rating:not(:checked)>label:hover, 
+#rating:not(:checked)>label:hover~label{color:#FFD700;}
+/* Hover vào các sao phía trước ngôi sao đã chọn*/
+#rating>input:checked+label:hover,
+#rating>input:checked~label:hover,
+#rating>label:hover~input:checked~label,
+#rating>input:checked~label:hover~label{color:#FFED85;}
 
+.title-name{
+    display: block;
+    text-align: center;
+    color: #e80505;
+    font-weight: bold;
+}
+.text-p{
+    margin-bottom: 0px;
+}
+.text-p span{
+    color: #e80505;
+}
+.step{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #e80505;
+    text-decoration: underline;
+}
+.watch-tutorial{
+    margin-bottom: 10px;
+    display: block;
+    color: #007bff!important;
+}
+.main-content{
+    padding: 10px;
+    background: #f8f9fa;
+}
+.left-content{
+    padding: 10px;
+    border: 1px solid #00000012;
+    background: #fff;
+    margin-bottom: 10px;
+}
+.right-content{
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ededed;
+}
+
+.title-nav{
+    padding: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.title-nav .title-main{
+    float: left;
+}
+.title-nav .icon-title{
+    float: right;
+}
+.title-nav .icon-title i{
+    color: #00000075;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.item-input{
+    padding: 10px;
+
+}
+.item-input > p{
+    font-weight: bold;
+    float: left;
+    width: 120px;
+}
+.item-input p{
+    font-weight: bold;
+}
+.item-input input {
+    padding: 3px 0px 3px 12px;
+    outline: none;
+}
+.item-input select{
+    padding: 5px 18px;
+    outline: none;
+}
+.item-input .note{
+    width: auto;
+    color: red;
+}
+.example-code{
+    height: 126px!important;
+}
+.text-note p{
+    color: red;
+}
+.notification{
+    margin-top: 50px;
+    font-weight: bold;
+    margin-left: 25px;
+}
+.pay{
+    padding: 10px;
+    font-weight: bold;
+    background: blue;
+    display: block;
+    text-align: center;
+    color: #fff!important;
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    transition: .5s;
+}
+.pay:hover{
+    background: #4dc9ee;
+}
+.content-box{
+    margin-top: 10px;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ededed;
+    position: relative;
+}
+.tutorial-load-game{
+    background-color: #eee;
+    height: 162px;
+    border: 1px solid #ededed;
+    overflow: auto;
+    padding: 12px;
+    margin-left: 30px;
+}
+.example-code{
+    margin-left: 16px!important;
+}
+@media all and (max-width: 432px){
+    .tutorial-load-game{
+        margin-left: 15px!important;
+    }
+    .example-code{
+        margin-left: 0!important;
+    }
+    .pay{
+        width: 45%!important;
+    }
+    
+}
+.content-box .table{
+    margin-top: 23px;
+    overflow-x: auto;
+}
+.content-box .content{
+    padding: 10px;
+}
+.content-box .content .cancel-deal{
+    padding: 10px;
+    background: blue;
+    color: #fff!important;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+.content-box .content .cancel-deal:hover{
+    background: #4dc9ee;
+}
+
+.content-box .content .function{
+    float: left;
+}
+.content-box .content .function ul{
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+.content-box .content .function ul li{
+    display: inline-block;
+}
+.content-box .content .function ul li a{
+    padding: 5px 10px;
+    border: 1px solid #0000001a;
+}
+.content-box .content .search{
+    float: right;
+}
+.content-box .content .search p{
+    float: left;
+    margin-bottom: 0;
+    position: relative;
+    margin-top: 7px;
+}
+.content-box .content .search input{
+    outline: none;
+    padding: 5px;
+}
+
+.prev-next{
+    padding-bottom: 30px;
+    right: 27px;
+    bottom: -18px;
+    margin-bottom: 10px;
+}
+.prev-next a{
+    padding: 9px;
+    background: #00000012;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+.prev-next a:hover{
+    background: blue;
+    color: #fff!important;
+}
+
+
+@media all and (max-width: 767px){
+    .item-content img{
+        width: 120px;
+    }
+    .text-content{
+        margin-left: 140px;
+    }
+}
+@media all and (max-width: 576px){
+    .img-news-mini{
+        float: left;
+        width: 120px;
+    }
+    
+    .img-news-mini img{
+
+    }
+    
+    .text-news{
+        margin-left: 140px;
+        text-align: start;
+    }
+}
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
