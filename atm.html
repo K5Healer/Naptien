@@ -2,13 +2,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title> Tạo chiết khấu</title>
+        <title> Rút tiền qua ATM</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
                 
         <meta property="og:image" content="lib/img/tet_2020.png?v=1581482784" />
         <meta property="image" content="lib/img/tet_2020.png?v=1581482784" />
         <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+
+        <link rel="stylesheet" type="text/css" href="css/update.css">
         <!-- Add icon library -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="lib/css/bootstrap-datepicker.min.css">
@@ -16,6 +18,7 @@
         <link rel="stylesheet" href="lib/css/jquery.growl.css">
         <link rel="stylesheet" href="lib/css/customs.css?v=1581482784">
         
+        </script>
         <script type="text/javascript" src="lib/js/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="lib/js/popper.min.js"></script>
         <script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
@@ -23,10 +26,16 @@
         <script type="text/javascript" src="lib/js/jquery.growl.js"></script>
         <script type="text/javascript" src="lib/js/bootbox.min.js"></script>
         <script type="text/javascript" src="lib/js/main.js?v=1581482784"></script>
-
     </head>
+    <style type="text/css">
+        table th{
+            border: 1px solid #ccc;
+        }
+        ul span{
+            color: red;
+        }
+    </style>
     <body>
-        
         <!--Navigation-->
         <nav class="navbar mn-nav navbar-expand-lg navbar-light bg-light">
             <div class="container">
@@ -51,10 +60,17 @@
                 </div>
             </div>
         </nav>
+
+        <p style="width: 100%;padding: 10px 0;background-color: lightblue;text-align: center;font-size: 18px;">
+            <a style="color: red!important;" href="#"> 
+                <strong> Dịch Vụ Rút Tiền Qua Thẻ ATM</strong><br>
+                <span style="color: red;">Chiết Khấu: 10% </span>
+            </a>  
+        </p>
         <!--Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light pt-3">
             <div class="container">
-                <a class="navbar-brand" href="user.html"><img src="lib/img/dichvuthe.png"></a>
+                <a class="navbar-brand" href="index.html"><img src="lib/img/dichvuthe.png" width="130" height="80"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSecondary">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -79,103 +95,95 @@
                 </div>
             </div>
         </nav>
-                
-<div class="container">
-    <hr >
-    <div class="row pt-3">
-        <div class="col-12">
-            <h4 class="pb-3">Tạo giảm chiết khấu đơn hàng</h4> 
-                        <form class="form-inline mb-4">
-                <div class="form-group mb-2">
-                    <label for="findText" class="col-sm-5 col-form-label"><b>Mã đơn hàng:</b></label>
-                    <div class="col-sm-6">
-                        <input type="text" class="form-control" id="findText" placeholder="Mã đơn hàng" value="" name="orderId">
-                        <input type="hidden" class="form-control" name="telecom" value="">
-                    </div>
-                </div>
-                <div class="form-group mb-2">
-                    <div class="col-sm-10">
-                        <button class="btn btn-my" type="submit"><i class="fa fa-search"></i></button>
-                    </div>
-                </div>
-            </form>
-            <div class="table-responsive">
-                <table class="table table-striped table-sm">
-                    <thead>
+        <div class="container home-container">
+            <hr >
+            <div class="table" style="overflow:auto;">
+                <table class="table">
+                    <thead class="thead-dark">
                         <tr>
-                            <th class="text-center">ĐH</th>
-                            <th class="text-center">Thời gian</th>
-                            <th class="text-center">Nhà mạng</th>
-                            <th class="text-center">Số nạp</th>
-                            <th class="text-center">Loại</th>
-                            <th class="text-center">Số tiền</th>
-                            <th class="text-center">Giảm CK</th>
-                            <th class="text-center">Chiết khấu</th>
-                            <th class="text-center">Thanh toán</th>
-                            <th class="text-center">Gộp</th>
-                            <th class="text-center">Đã nạp</th>
-                            <th class="text-center">Trạng thái</th>
+                            <th>Tên Chủ Thẻ</th>
+                            <th>STK</th>
+                            <th>Ngân Hàng</th>
+                            <th>Chi Nhánh</th>
+                            <th>Số Tiền Rút</th>
                         </tr>
                     </thead>
-                    <tbody> 
+                    <tbody>
                         <tr>
-                            <td colspan="5" class="text-right no-bg">Tổng: </td>
-                            <td class="no-bg  text-right"><b>0</b></td>
-                            <td class="no-bg"></td>
-                            <td class="no-bg  text-right green"><b></b></td>
-                            <td colspan="10" class="text-right no-bg">Có <b>0</b> items.</td>
+                            <th>
+                                <input class="form-control" type="text" name="name" placeholder="Tên Chủ Thẻ | Chủ Ví">
+                            </th>
+                            <th>
+                                <input class="form-control" type="text" name="tknh" placeholder="STK | SĐT Ví">
+                            </th>
+                            <th>
+                                <select class="form-control">
+                                    <option>Chọn Ngân Hàng</option>
+                                    <option>Ngân Hàng ACB</option>
+                                    <option>Ngân Hàng BIDV</option>
+                                    <option>Ví Điện Tử MoMo</option>
+                                    <option>Ngân Hàng MB Bank</option>
+                                </select>
+                            </th>
+                            <th><input class="form-control" type="text" name="chinhanh" placeholder="Có thể bỏ trống"></th>
+                            <th><input class="form-control" type="text" name="sotien" placeholder="MOMO min 10,000đ"></th>
                         </tr>
                         <tr>
-                            <td colspan="15" class="no-bg"></td>
+                            <th colspan="5"><button type="button" class="btn btn-primary">Primary</button></th>
                         </tr>
-
                     </tbody>
                 </table>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <a  class="btn btn-no-rounded btn-green pull-right ml-1" href="nap-di-dong-tra-truoc-viettel.html" ><i class="fa fa-arrow-left"></i> Quay lại</a>
-                </div> 
+            <div class="atm-content">
+                <label>Lưu ý:</label>
+                <ul>
+                    <li>Lệnh rút tiền được thực hiện trong vài phút đến vài giờ</li>
+                    <li>Điền đầy đủ thông tin ngân hàng</li>
+                    <li>Điền sai STK chúng tôi không chịu trách nhiệm</li>
+                    <li>Số tiền rút tối thiểu là <span>10,000</span> đối với MOMO,Bank <span>100,000</span></li>
+                    <li>Phí rút tiền về MOMO <span>0đ</span>,Phí rút về Bank <span>3,000đ</span></li>
+                </ul>
             </div>
         </div>
-    </div>
-    <br>
-</div>
+        
+        <div class="container">
+            <label style="font-weight: 600;"><u>LỊCH SỬ RÚT TIỀN</u></label>
+            <div class="table text-center mt-3" style="overflow:auto;">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>STK</th>
+                            <th>Ngân Hàng</th>
+                            <th>Chi Nhánh</th>
+                            <th>Số Tiền Rút</th>
+                            <th>Tên Chủ Thẻ</th>
+                            <th>Thời Gian</th>
+                            <th>Ghi Chú</th>
+                            <th>Trạng Thái</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <th>A1</th>
+                        <th>0123456</th>
+                        <th>ACB</th>
+                        <th>Hà Nội</th>
+                        <th>1,000,000đ</th>
+                        <th>Nguyễn Văn Khánh</th>
+                        <th>22/02/2020 <br> 14:03</th>
+                        <th>Rút tiền</th>
+                        <th>Trạng thái</th>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
         <footer>
-    <div class="container">
-        <hr>
-        <p class="text-center gray">COPYRIGHT ©  CORPORATION. ALL RIGHTS RESERVED</p>
-    </div>
-</footer>
-<script>
-    $('#datefrompicker').datepicker({
-        weekStart: 1,
-        daysOfWeekHighlighted: "",
-        autoclose: true,
-        todayHighlight: true,
-    });
-    $('#datefrompicker').datepicker();
-
-    $('#datetopicker').datepicker({
-        weekStart: 1,
-        daysOfWeekHighlighted: "",
-        autoclose: true,
-        todayHighlight: true,
-    });
-    $('#datetopicker').datepicker();
-
-    $('.datetopicker').datepicker({
-        weekStart: 1,
-        daysOfWeekHighlighted: "",
-        autoclose: true,
-        todayHighlight: true,
-    });
-</script>
-        <script type="text/javascript" src="/assets/v1/f/js/my/card-match.js?v=1581586765"></script>
-<script type="text/javascript">
-                        var cardMatchDeductDiscountOrdersUrl = 'https://www.naptien.biz/user/card-match/deduct-discount-orders';
-</script>
-
+            <div class="container">
+                <hr>
+                <p class="text-center gray">COPYRIGHT ©  CORPORATION. ALL RIGHTS RESERVED</p>
+            </div>
+        </footer>
     </body>
-    <script src="/assets/v1/f/my/custom-date.js"></script>
+    <script src="lib/my/custom-date.js"></script>
 </html>

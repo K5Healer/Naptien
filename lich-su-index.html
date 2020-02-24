@@ -2,20 +2,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title> Thanh toán cước trả sau</title>
+        <title> Lịch sử giao dịch</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
                 
         <meta property="og:image" content="lib/img/tet_2020.png?v=1581482784" />
         <meta property="image" content="lib/img/tet_2020.png?v=1581482784" />
         <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+
+        <link rel="stylesheet" type="text/css" href="css/update.css">
         <!-- Add icon library -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="lib/css/bootstrap-datepicker.min.css">
         <link rel="stylesheet" href="lib/css/style.css">
         <link rel="stylesheet" href="lib/css/jquery.growl.css">
         <link rel="stylesheet" href="lib/css/customs.css?v=1581482784">
-        <!--Scripts-->    
         
         <script type="text/javascript" src="lib/js/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="lib/js/popper.min.js"></script>
@@ -23,7 +24,7 @@
         <script type="text/javascript" src="lib/js/bootstrap-datepicker.min.js"></script>
         <script type="text/javascript" src="lib/js/jquery.growl.js"></script>
         <script type="text/javascript" src="lib/js/bootbox.min.js"></script>
-        <script type="text/javascript" src="lib/js/main.js"></script>
+        <script type="text/javascript" src="lib/js/main.js?v=1581482784"></script>     
     </head>
     <body>
         
@@ -42,7 +43,7 @@
                                 A Minh (Số dư: <b>12,800đ</b>)
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="info-user.html"><i class="fa fa-user"></i> Thông tin tài khoản</a>
+                                <a class="dropdown-item" href="info-index.html"><i class="fa fa-user"></i> Thông tin tài khoản</a>
                                 <a class="dropdown-item" href="change-password.html"><i class="fa fa-lock"></i> Thay đổi mật khẩu</a>
                                 <a class="dropdown-item" href="index-dang-nhap.html"><i class="fa fa-sign-out"></i> Đăng xuất</a>
                             </div>
@@ -51,12 +52,7 @@
                 </div>
             </div>
         </nav>
- 
-    <marquee style="width: 100%;padding: 10px 0;background-color: lightblue;">
-       <strong style="color: red;">chiết khấu thanh toán cước trả sau: 25%</strong>
-    </marquee>  
-    
-    <!--Navigation-->
+        <!--Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light pt-3">
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img src="lib/img/dichvuthe.png" width="130" height="80"></a>
@@ -84,55 +80,52 @@
                 </div>
             </div>
         </nav>
-<div class="container home-container">
+<div class="container">
     <hr >
-    <div class="tab-content pt-3" id="pills-tabContent">
-        <div class="tab-pane active" id="pills-service" role="tabpanel" aria-labelledby="pills-service-tab">
-            <div class="row">
-                <div class="col-md-3 d-flex justify-content-center">
-                    <div class="card mb-4 border-0 pl-4 pr-4">
-                        <img class="card-img-top image" src="lib/img/btc-vina.gif" >
-                        <div class="card-body m-0 p-0 d-flex justify-content-center">
-                            <p class="card-text"><a href="nap-qua-app-tra-sau.html" class="btn mt-0 pt-0 stretched-link">Nạp Qua App</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 d-flex justify-content-center">
-                    <div class="card mb-4 border-0 pl-4 pr-4">
-                        <img class="card-img-top image" src="lib/img/app.png" >
-                        <div class="card-body m-0 p-0 d-flex justify-content-center">
-                            <p class="card-text"><a href="nap-the-qua-tong-dai-tra-sau.html" class="btn mt-0 pt-0 stretched-link">Nạp Qua<br>Tổng Đài Cú Pháp</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 d-flex justify-content-center">
-                    <div class="card mb-4 border-0 pl-4 pr-4">
-                        <img class="card-img-top image" src="lib/img/kplus.png">
-                        <div class="card-body m-0 p-0  d-flex justify-content-center">
-                            <p class="card-text"><a href="gia-han-K+.html" class="btn mt-0 pt-0 stretched-link">Thanh Toán <br> Gia Hạn <br>Truyền Hình K+</a></p>
-                        </div>
-                    </div>
-                </div> 
-               <!--  <div class="col-md-3 d-flex justify-content-center">
-                    <div class="card mb-4 border-0 pl-4 pr-4">
-                        <img class="card-img-top image" src="lib/img/check-debt-viettel-pay.png" >
-                        <div class="card-body m-0 p-0 d-flex justify-content-center">
-                            <p class="card-text"><a href="thanh-toan-ftth.html" class="btn mt-0 pt-0 stretched-link">Thanh Toán<br>FTTH/ADSL/<br>LEADLINE/NEXT TV<br>Viettel</a></p>
-                        </div>
-                    </div>
-                </div> -->                    
+    <div class="row">
+        <div class="col-6 col-md-3">
+            <div class="ls-content ls-tong" data-href="lich-su.html">
+                <span>0/123</span><br>
+                <span>
+                    Tổng Số Đơn Hàng
+                </span>
             </div>
-            <br>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="ls-content ls-xuly" data-href="lich-su.html">
+                <span>0/123</span><br>
+                <span>
+                    Đơn Đang Chờ Xử Lý
+                </span>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="ls-content ls-thanhcong" data-href="lich-su.html">
+                <span>0/123</span><br>
+                <span>
+                    Đơn Thành Công
+                </span>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="ls-content ls-thatbai" data-href="lich-su.html">
+                <span>0/123</span><br>
+                <span>
+                    Đơn Hủy/Thất Bại
+                </span>
+            </div>
         </div>
     </div>
+    <br>
+
 </div>
 
-<footer>
-    <div class="container">
-        <hr>
-        <p class="text-center gray">COPYRIGHT ©  CORPORATION. ALL RIGHTS RESERVED</p>
-    </div>
-</footer>
+        <footer>
+            <div class="container">
+                <hr>
+                <p class="text-center gray">COPYRIGHT ©  CORPORATION. ALL RIGHTS RESERVED</p>
+            </div>
+        </footer>
 <script>
     $('#datefrompicker').datepicker({
         weekStart: 1,
@@ -157,6 +150,13 @@
         todayHighlight: true,
     });
 </script>
+<script type="text/javascript">
+        $(document).ready(function($) {
+            $(".ls-content").click(function() {
+                window.document.location = $(this).data("href");
+            });
+        });
+    </script>
         
     </body>
     <script src="lib/my/custom-date.js"></script>

@@ -15,13 +15,7 @@
     <link rel="stylesheet" href="lib/css/style.css">
     <link rel="stylesheet" href="lib/css/jquery.growl.css">
     <link rel="stylesheet" href="lib/css/customs.css?v=1581482784">
-    <!--Scripts-->    
-    <script type="text/javascript">
-        var telecom = {"VMS":{"id":"VMS","code":"mobifone","name":"Mobifone","logo":"mobi.png","head_phone_number":[90,93,120,121,122,126,128,89,70,79,77,76,78],"head_home_phone_number":[]},"KPLUSS":{"id":"KPLUSS","code":"kpluss","name":"K+","logo":"kpluss.png","head_phone_number":[],"head_home_phone_number":[]},"VNP":{"id":"VNP","code":"vinaphone","name":"VinaPhone","logo":"vnp.png","head_phone_number":[91,94,123,124,125,127,129,88,83,84,85,81,82],"head_home_phone_number":[]},"VTT":{"id":"VTT","code":"viettel","name":"Viettel","logo":"vtt.png","head_phone_number":[96,97,98,162,163,164,165,166,167,168,169,86,32,33,34,35,36,37,38,39],"head_home_phone_number":[865,202,726,204,762,420,265,226,565,826,766,767,728,165,232,765,526,365,465,965,234,625,664,22,246,286,626,665,221,247,627,666,222,248,628,667,223,249,629,668,224,226,633,669,225,227,220,221,650,651,653,658,126,632,128]},"ZING":{"id":"ZING","code":"zing","name":"Zing","logo":"zing.png","head_phone_number":[],"head_home_phone_number":[]},"GATE":{"id":"GATE","code":"Gate","name":"Zing","logo":"gate.png","head_phone_number":[],"head_home_phone_number":[]}};
-        var asset_url = '/assets/v1/';
-        var token = '2fdcHModgSKMyNRuWu27zQmdcwI40Jb5RzGCLwNy';
-
-    </script>
+    
     <script type="text/javascript" src="lib/js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="lib/js/popper.min.js"></script>
     <script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
@@ -30,46 +24,6 @@
     <script type="text/javascript" src="lib/js/bootbox.min.js"></script>
     <script type="text/javascript" src="lib/js/main.js?v=1581482784"></script>
 
-
-    <link rel="manifest" href="/manifest.json" />
-    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-    <script>
-        var OneSignal = window.OneSignal || [];
-        OneSignal.push(function() {
-            OneSignal.init({
-                appId: "16e98d9b-a359-485d-a82b-d886385af7e6",
-            });
-        });
-    </script>
-    <!-- Facebook Pixel Code -->
-    <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window,document,'script',
-                'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '1776434102684916'); 
-            fbq('track', 'PageView');
-        </script>
-        <noscript>
-         <img height="1" width="1" 
-         src="https://www.facebook.com/tr?id=1776434102684916&ev=PageView
-         &noscript=1"/>
-     </noscript>
-     <!-- End Facebook Pixel Code -->
-
-     <!-- Global site tag (gtag.js) - Google Analytics -->
-     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143385602-1"></script>
-     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-143385602-1');
-    </script>
 </head>
 <body>
 
@@ -151,9 +105,19 @@
                                     <option>12 Tháng (1500K)</option>
                                 </select>
                             </div>
+
+                            <div class="item-input">
+                                <p>Loại Game</p>
+                                <select>
+                                    <option>Garena</option>
+                                    <option>Zing xu</option>
+                                    <option>Vicon</option>
+                                </select>
+                            </div>
+
                             <div class="item-input">
                                 <p>Cú pháp</p>
-                                <input type="text" name="" placeholder="Chiết khẩu 33%">
+                                <input type="text" name="" placeholder="GARENA 123A">
                             </div>
                             <div class="item-input row">
                                 <div class="col-md-2">
@@ -201,7 +165,7 @@
                             <div class="spacer"></div>
                         </div>
                         <div class="notification">
-                            <p></p>
+                            <p>Chiết Khấu Nạp Thẻ Game: 10%</p>
                         </div>
                     </div>
                 </div>
@@ -231,7 +195,16 @@
                             </tr>
                         </thead>
                         <tbody>
-
+                            <tr>
+                                <th>A123</th>
+                                <td>098</td>
+                                <td>100,000</td>
+                                <td>50,000</td>
+                                <td>20 000</td>
+                                <td>Viettel</td>
+                                <td>Abc</td>
+                                <td>Thiếu 50,000</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -341,16 +314,6 @@
         daysOfWeekHighlighted: "",
         autoclose: true,
         todayHighlight: true,
-    });
-</script>
-<script type="text/javascript" src="lib/js/my/card-match.js?v=1581483784"></script>
-<script type="text/javascript">
-    var cardMatchUpdateStatusUrl = 'https://www.naptien.biz/user/card-match/update-status';
-    var exportExcelUrl = 'https://www.naptien.biz/user/card-match/export-excel?v=1581483784';
-    var cardMatchTopupList = 'https://www.naptien.biz/user/card-match/get-list-topup?v=1581483784';
-    cardMatch.uploadExcel();
-    $(document).ready(function () {
-
     });
 </script>
 
