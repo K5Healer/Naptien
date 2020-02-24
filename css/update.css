@@ -1,36 +1,46 @@
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
 }
 
 /* Style the buttons inside the tab */
 .tab button {
-  background-color: inherit;
-  float: left;
+  background-color: #eee;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 14px 5px;
   transition: 0.3s;
-  font-size: 17px;
+  font-size: 14px;
+  width: 140px;
+  border-radius: 10px;
+  margin: 5px 0;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: #0e0d6a;
+  border-radius: 10px;
+  color: white;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccc;
+  background-color: #ccccff;
+  border-radius: 10px;
+  color: white;
+}
+
+.tablinks-button{
+  min-height: 135px;
+}
+.tablinks-button img{
+  margin-bottom: 10px;
 }
 
 /* Style the tab content */
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
   border-top: none;
 }
 
@@ -75,4 +85,24 @@ div.button button:hover{
 }
 button.btn-my a:hover{
   color: white !important;
+}
+.ls-tong{
+  background: #2cc02c;
+}
+.ls-xuly{
+  background: #5532b5;
+}
+.ls-thanhcong{
+  background: #007bff;
+}
+.ls-thatbai{
+  background: red;
+}
+.ls-content{
+  font-size: 14px;
+    color: white;
+    padding: 10px 10px 30px 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    cursor: pointer;
 }

@@ -802,6 +802,17 @@ h1{font-size:1.5em;margin:10px;}
 }
 
 
+.submit{
+    text-align: center;
+    margin-bottom: 10px;
+}
+@media all and (max-width: 560px){
+    [class*="col-"] {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 @media all and (max-width: 767px){
     .item-content img{
         width: 120px;
@@ -816,14 +827,16 @@ h1{font-size:1.5em;margin:10px;}
         width: 120px;
     }
     
-    .img-news-mini img{
-
+    .col-4{
+        text-align: center;
     }
-    
-    .text-news{
-        margin-left: 140px;
-        text-align: start;
-    }
+    .btn-primary{
+     padding: 5px 10px;
+ }
+ .text-news{
+    margin-left: 140px;
+    text-align: start;
+}
 }
 /*
 Extra small (xs) devices (portrait phones, less than 576px)

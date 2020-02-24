@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title> Nạp thẻ trả trước</title>
+        <title> Nạp qua app trả sau</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
                 
@@ -87,19 +87,31 @@
         </nav>
         <div class="container home-container">
             <hr >
-            
             <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'Viettel')">Viettel</button>
-                <button class="tablinks" onclick="openCity(event, 'Mobi')">Mobi Phone</button>
-                <button class="tablinks" onclick="openCity(event, 'Vina')">Vina Phone</button>
-                <button class="tablinks" onclick="openCity(event, 'Vietnamobile')">Vietnamobile</button>
+                
+                <button class="tablinks" onclick="openCity(event, 'Viettel-1')">
+                        <img src="lib/img/i-share-viettel.png" width="60" height="40">
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'Mobi')">
+                        <img src="lib/img/mobi.png" width="60" height="40">
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'Vina')">
+                        <img src="lib/img/vnp.png" width="60" height="40">
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'Vietnamobile')">
+                        <img src="lib/img/vietnamobile.png" width="60" height="40">
+                </button>
             </div>
 
-            <div id="Viettel" class="tabcontent">
+
+            <div id="Viettel-1" class="tabcontent">
                 <div class="row mt-5 px-2">
+                    <h1>Nạp Viettel (FTTH/ADSL/Next TV) Có MyViettel</h1>
+                </div>
+                <div class="row mt-3 px-2">
                     <div class="col-md-2"></div>
                     <div class="col-md-2 mt-2">
-                        <label>Số Điện Thoại:</label>
+                        <label>SĐT/TK/MãKH:</label>
                     </div>
                     <div class="col-md-6">
                         <input type="tel" class="form-control" name="phone">
@@ -137,8 +149,8 @@
                 </div>
                 <div class="row mt-3 px-2">
                     <div class="col-md-2"></div>
-                    <div class="col-md-2 mt-2">
-                        <label>Pass:</label>
+                    <div class="col-md-2">
+                        <label>Mật Khẩu MyViettel/OTP:</label>
                     </div>
                     <div class="col-md-6">
                         <input type="password" class="form-control" name="pass">
@@ -148,7 +160,17 @@
                 <div class="row mt-3 px-2">
                     <div class="col-md-2"></div>
                     <div class="col-md-2 mt-2">
-                        <label>Chiết Khấu (%):</label>
+                        <label>Mật Khẩu Bán Hàng:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="password" class="form-control" name="pass">
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row mt-3 px-2">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2">
+                        <label>Chiết Khấu Ưu Tiên(%):</label>
                     </div>
                     <div class="col-md-6">
                         <input type="number" class="form-control" name="number">
@@ -156,26 +178,21 @@
                     <div class="col-md-2"></div>
                 </div>
 
-                <div class="row mt-5 mb-3 px-2">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-2">
-                        <button type="button" class="btn btn-primary">Tạm dừng</button>
-                    </div>
-                    <div class="col-md-2">
-                        <button type="button" class="btn btn-primary">Tiếp tục</button>
-                    </div>
-                    <div class="col-md-2">
-                        <button type="button" class="btn btn-primary">Hủy đơn</button>
-                    </div>
-                    <div class="col-md-3"></div>
+                <div class="submit mt-5 mb-3 px-2">
+                    <button type="button" class="btn btn-primary">Tạm dừng</button>
+                    <button type="button" class="btn btn-primary">Tiếp tục</button>
+                    <button type="button" class="btn btn-primary">Hủy đơn</button>
                 </div>
             </div>
 
             <div id="Mobi" class="tabcontent">
                 <div class="row mt-5 px-2">
+                    <h1>Nạp thẻ MobiPhone qua app MyMobiPhone</h1>
+                </div>
+                <div class="row mt-3 px-2">
                     <div class="col-md-2"></div>
                     <div class="col-md-2 mt-2">
-                        <label>Số Điện Thoại:</label>
+                        <label>SĐT/TK/MãKH:</label>
                     </div>
                     <div class="col-md-6">
                         <input type="tel" class="form-control" name="phone">
@@ -213,8 +230,18 @@
                 </div>
                 <div class="row mt-3 px-2">
                     <div class="col-md-2"></div>
+                    <div class="col-md-2">
+                        <label>Mật Khẩu MyMB/OTP:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="password" class="form-control" name="pass">
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row mt-3 px-2">
+                    <div class="col-md-2"></div>
                     <div class="col-md-2 mt-2">
-                        <label>Pass:</label>
+                        <label>Mật Khẩu Bán Hàng:</label>
                     </div>
                     <div class="col-md-6">
                         <input type="password" class="form-control" name="pass">
@@ -223,34 +250,29 @@
                 </div>
                 <div class="row mt-3 mb-5 px-2">
                     <div class="col-md-2"></div>
-                    <div class="col-md-2 mt-2">
-                        <label>Chiết Khấu (%):</label>
+                    <div class="col-md-2">
+                        <label>Chiết Khấu Ưu Tiên(%):</label>
                     </div>
                     <div class="col-md-6">
                         <input type="number" class="form-control" name="number">
                     </div>
                     <div class="col-md-2"></div>
                 </div>
-                <div class="row mt-5 mb-3 px-2">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-2">
-                        <button type="button" class="btn btn-primary">Tạm dừng</button>
-                    </div>
-                    <div class="col-md-2">
-                        <button type="button" class="btn btn-primary">Tiếp tục</button>
-                    </div>
-                    <div class="col-md-2">
-                        <button type="button" class="btn btn-primary">Hủy đơn</button>
-                    </div>
-                    <div class="col-md-3"></div>
+                <div class="submit mt-5 mb-3 px-2">
+                    <button type="button" class="btn btn-primary">Tạm dừng</button>
+                    <button type="button" class="btn btn-primary">Tiếp tục</button>
+                    <button type="button" class="btn btn-primary">Hủy đơn</button>
                 </div>
             </div>
 
             <div id="Vina" class="tabcontent">
                 <div class="row mt-5 px-2">
+                    <h1>Nạp thẻ Vina qua app MyVina Phone</h1>
+                </div>
+                <div class="row mt-3 px-2">
                     <div class="col-md-2"></div>
                     <div class="col-md-2 mt-2">
-                        <label>Số Điện Thoại:</label>
+                        <label>SĐT/TK/MãKH:</label>
                     </div>
                     <div class="col-md-6">
                         <input type="tel" class="form-control" name="phone">
@@ -288,8 +310,18 @@
                 </div>
                 <div class="row mt-3 px-2">
                     <div class="col-md-2"></div>
+                    <div class="col-md-2">
+                        <label>Mật Khẩu MyVina/OTP:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="password" class="form-control" name="pass">
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row mt-3 px-2">
+                    <div class="col-md-2"></div>
                     <div class="col-md-2 mt-2">
-                        <label>Pass:</label>
+                        <label>Mật Khẩu Bán Hàng:</label>
                     </div>
                     <div class="col-md-6">
                         <input type="password" class="form-control" name="pass">
@@ -298,34 +330,29 @@
                 </div>
                 <div class="row mt-3 mb-5 px-2">
                     <div class="col-md-2"></div>
-                    <div class="col-md-2 mt-2">
-                        <label>Chiết Khấu (%):</label>
+                    <div class="col-md-2">
+                        <label>Chiết Khấu Ưu Tiên(%):</label>
                     </div>
                     <div class="col-md-6">
                         <input type="number" class="form-control" name="number">
                     </div>
                     <div class="col-md-2"></div>
                 </div>
-                <div class="row mt-5 mb-3 px-2">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-2">
-                        <button type="button" class="btn btn-primary">Tạm dừng</button>
-                    </div>
-                    <div class="col-md-2">
-                        <button type="button" class="btn btn-primary">Tiếp tục</button>
-                    </div>
-                    <div class="col-md-2">
-                        <button type="button" class="btn btn-primary">Hủy đơn</button>
-                    </div>
-                    <div class="col-md-3"></div>
+                <div class="submit mt-5 mb-3 px-2">
+                    <button type="button" class="btn btn-primary">Tạm dừng</button>
+                    <button type="button" class="btn btn-primary">Tiếp tục</button>
+                    <button type="button" class="btn btn-primary">Hủy đơn</button>
                 </div>
             </div>
 
             <div id="Vietnamobile" class="tabcontent">
                 <div class="row mt-5 px-2">
+                    <h1>Nạp thẻ Vietnamobile qua app MyVietnamobile</h1>
+                </div>
+                <div class="row mt-3 px-2">
                     <div class="col-md-2"></div>
                     <div class="col-md-2 mt-2">
-                        <label>Số Điện Thoại:</label>
+                        <label>SĐT/TK/MãKH:</label>
                     </div>
                     <div class="col-md-6">
                         <input type="tel" class="form-control" name="phone">
@@ -363,8 +390,18 @@
                 </div>
                 <div class="row mt-3 px-2">
                     <div class="col-md-2"></div>
+                    <div class="col-md-2">
+                        <label>Mật Khẩu MyVietnamobile/OTP:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="password" class="form-control" name="pass">
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row mt-3 px-2">
+                    <div class="col-md-2"></div>
                     <div class="col-md-2 mt-2">
-                        <label>Pass:</label>
+                        <label>Mật Khẩu Bán Hàng:</label>
                     </div>
                     <div class="col-md-6">
                         <input type="password" class="form-control" name="pass">
@@ -373,26 +410,18 @@
                 </div>
                 <div class="row mt-3 mb-5 px-2">
                     <div class="col-md-2"></div>
-                    <div class="col-md-2 mt-2">
-                        <label>Chiết Khấu (%):</label>
+                    <div class="col-md-2">
+                        <label>Chiết Khấu Ưu Tiên(%):</label>
                     </div>
                     <div class="col-md-6">
                         <input type="number" class="form-control" name="number">
                     </div>
                     <div class="col-md-2"></div>
                 </div>
-                <div class="row mt-5 mb-3 px-2">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-2">
-                        <button type="button" class="btn btn-primary">Tạm dừng</button>
-                    </div>
-                    <div class="col-md-2">
-                        <button type="button" class="btn btn-primary">Tiếp tục</button>
-                    </div>
-                    <div class="col-md-2">
-                        <button type="button" class="btn btn-primary">Hủy đơn</button>
-                    </div>
-                    <div class="col-md-3"></div>
+                <div class="submit mt-5 mb-3 px-2">
+                    <button type="button" class="btn btn-primary">Tạm dừng</button>
+                    <button type="button" class="btn btn-primary">Tiếp tục</button>
+                    <button type="button" class="btn btn-primary">Hủy đơn</button>
                 </div>
             </div>
         </div>
@@ -408,30 +437,6 @@
         <p class="text-center gray">COPYRIGHT ©  CORPORATION. ALL RIGHTS RESERVED</p>
     </div>
 </footer>
-<script>
-    $('#datefrompicker').datepicker({
-        weekStart: 1,
-        daysOfWeekHighlighted: "",
-        autoclose: true,
-        todayHighlight: true,
-    });
-    $('#datefrompicker').datepicker();
-
-    $('#datetopicker').datepicker({
-        weekStart: 1,
-        daysOfWeekHighlighted: "",
-        autoclose: true,
-        todayHighlight: true,
-    });
-    $('#datetopicker').datepicker();
-
-    $('.datetopicker').datepicker({
-        weekStart: 1,
-        daysOfWeekHighlighted: "",
-        autoclose: true,
-        todayHighlight: true,
-    });
-</script>
 <script>
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
