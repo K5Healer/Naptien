@@ -142,6 +142,10 @@
                                         <p>Cú pháp</p>
                                         <input type="text" name="" placeholder="GARENA 123A">
                                     </div>
+                                    <div class="item-input">
+                                        <p style="margin-bottom: 0 !important;">Chiết Khấu (%) Hiện Tại Của Bạn</p>
+                                        <input type="text" name="" placeholder="20">
+                                    </div>
                                     <div class="item-input row">
                                         <div class="col-md-2">
                                             <p>Hướng dẫn</p>
@@ -201,76 +205,6 @@
                             <div class="row pt-3">
                                 <div class="col-12">
                                     <div class="form-group mb-2 form-group-xs-12">
-                                        <label for="typeText" class="col-sm-12 col-form-label col-xs-12"><b>Tên Tài Khoản VTC:</b></label>
-                                        <div class="col-sm-10 col-xs-12">
-                                            <input type="text" name="name" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="form-group mb-2 form-group-xs-12">
-                                        <label for="typeText" class="col-sm-12 col-form-label col-xs-12"><b>Mệnh Giá:</b></label>
-                                        <div class="col-sm-10 col-xs-12">
-                                            <select class="form-control" id="typeText" name="status">
-                                                <option value="">Tất cả</option>
-                                                <option value="2" >10,000</option>
-                                                <option value="0" >20,000</option>
-                                                <option value="1" >50,000</option>
-                                                <option value="4" >100,000</option>
-                                                <option value="5" >200,000</option>
-                                                <option value="3" >500,000</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-5">
-                            <div class="row">
-                                <div class="table">
-                                    <table class="table">
-                                        <thead class="thead-dark">
-                                            <tr><h1>Thông Tin Hệ Thống</h1></tr>
-                                            <tr>
-                                                <th scope="col">Mệnh Gía</th>
-                                                <th scope="col">Số Lượng</th>
-                                                <th scope="col">CK Mua Vào(%)</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="col">100,000</th>
-                                                <th scope="col">100</th>
-                                                <th scope="col">10</th>
-                                            </tr>
-                                            <tr>
-                                                <th scope="col">100,000</th>
-                                                <th scope="col">100</th>
-                                                <th scope="col">10</th>
-                                            </tr>
-                                            <tr>
-                                                <th scope="col">100,000</th>
-                                                <th scope="col">100</th>
-                                                <th scope="col">10</th>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>  
-                        </div>
-                        <div class="col-md-1"></div>
-                    </div> 
-                    <div class="submit text-left">
-                        <button type="button" class="btn btn-primary">Thanh Toán</button>
-                        <button type="button" class="btn btn-primary">Hủy đơn</button>
-                    </div>
-
-                </div>
-
-                <div id="vcoin" class="tabcontent">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="row pt-3">
-                                <div class="col-12">
-                                    <div class="form-group mb-2 form-group-xs-12">
                                         <label for="typeText" class="col-sm-12 col-form-label col-xs-12"><b>Tên Tài Khoản:</b></label>
                                         <div class="col-sm-10 col-xs-12">
                                             <input type="text" name="name" class="form-control">
@@ -290,6 +224,12 @@
                                             </select>
                                         </div>
                                     </div>
+                                    <div class="form-group mb-2 form-group-xs-12">
+                                        <label for="typeText" class="col-sm-12 col-form-label col-xs-12"><b>Chiết Khấu (%) Của Bạn Hiện Tại Là:</b></label>
+                                        <div class="col-sm-10 col-xs-12">
+                                            <input type="number" class="form-control" name="number" placeholder="20" disabled="">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -301,15 +241,17 @@
                                             <tr><h1>Thông Tin Hệ Thống</h1></tr>
                                             <tr>
                                                 <th scope="col">Mệnh Gía</th>
-                                                <th scope="col">Số Lượng</th>
-                                                <th scope="col">CK Mua Vào(%)</th>
+                                                <th scope="col">Zingxu nhận vào</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <th scope="col">100,000</th>
                                                 <th scope="col">100</th>
-                                                <th scope="col">10</th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="col">100,000</th>
+                                                <th scope="col">100</th>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -318,6 +260,82 @@
                         </div>
                         <div class="col-md-1"></div>
                     </div> 
+                    <div class="row mx-2 mb-3">
+                        <label>Ghi chú:</label>
+                        <div class="col-12">
+                            <textarea id="sms-game" rows="5" style="width: 100%" placeholder="Sắp tới có khuyến mại khủng!!!!" disabled=""></textarea>
+                        </div>
+                    </div>
+                    <div class="submit text-left">
+                        <button type="button" class="btn btn-primary">Thanh Toán</button>
+                        <button type="button" class="btn btn-primary">Hủy đơn</button>
+                    </div>
+
+                </div>
+
+                <div id="vcoin" class="tabcontent">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row pt-3">
+                                <div class="col-12">
+                                    <div class="form-group mb-2 form-group-xs-12">
+                                        <label for="typeText" class="col-sm-12 col-form-label col-xs-12"><b>Tên Tài Khoản VTC:</b></label>
+                                        <div class="col-sm-10 col-xs-12">
+                                            <input type="text" name="name" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-2 form-group-xs-12">
+                                        <label for="typeText" class="col-sm-12 col-form-label col-xs-12"><b>Mệnh Giá:</b></label>
+                                        <div class="col-sm-10 col-xs-12">
+                                            <select class="form-control" id="typeText" name="status">
+                                                <option value="">Tất cả</option>
+                                                <option value="2" >10,000</option>
+                                                <option value="0" >20,000</option>
+                                                <option value="1" >50,000</option>
+                                                <option value="4" >100,000</option>
+                                                <option value="5" >200,000</option>
+                                                <option value="3" >500,000</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-2 form-group-xs-12">
+                                        <label for="typeText" class="col-sm-12 col-form-label col-xs-12"><b>Chiết Khấu (%) Của Bạn Hiện Tại Là:</b></label>
+                                        <div class="col-sm-10 col-xs-12">
+                                            <input type="number" class="form-control" name="number" placeholder="20" disabled="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="row">
+                                <div class="table">
+                                    <table class="table">
+                                        <thead class="thead-dark">
+                                            <tr><h1>Thông Tin Hệ Thống</h1></tr>
+                                            <tr>
+                                                <th scope="col">Mệnh Gía</th>
+                                                <th scope="col">Vcoin nhận vào</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="col">100,000</th>
+                                                <th scope="col">100</th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div> 
+                    <div class="row mx-2 mb-3">
+                        <label>Ghi chú:</label>
+                        <div class="col-12">
+                            <textarea id="sms-game" rows="5" style="width: 100%" placeholder="Sắp tới có khuyến mại khủng!!!!" disabled=""></textarea>
+                        </div>
+                    </div>
                     <div class="submit text-left">
                         <button type="button" class="btn btn-primary">Thanh Toán</button>
                         <button type="button" class="btn btn-primary">Hủy đơn</button>
