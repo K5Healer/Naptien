@@ -1,30 +1,32 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>SMS GAME</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <head>
+        <title>SMS GAME</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta property="og:image" content="lib/img/tet_2020.png?v=1581482784" />
-    <meta property="image" content="lib/img/tet_2020.png?v=1581482784" />
-    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
-    <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="lib/css/bootstrap-datepicker.min.css">
-    <link rel="stylesheet" href="lib/css/style.css">
-    <link rel="stylesheet" href="lib/css/jquery.growl.css">
-    <link rel="stylesheet" href="lib/css/customs.css?v=1581482784">
-    
-    <script type="text/javascript" src="lib/js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="lib/js/popper.min.js"></script>
-    <script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="lib/js/bootstrap-datepicker.min.js"></script>
-    <script type="text/javascript" src="lib/js/jquery.growl.js"></script>
-    <script type="text/javascript" src="lib/js/bootbox.min.js"></script>
-    <script type="text/javascript" src="lib/js/main.js?v=1581482784"></script>
+        <meta property="og:image" content="lib/img/tet_2020.png?v=1581482784" />
+        <meta property="image" content="lib/img/tet_2020.png?v=1581482784" />
+        <link rel="stylesheet" href="lib/css/bootstrap.min.css">
 
-</head>
+        <link rel="stylesheet" type="text/css" href="css/update.css">
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="lib/css/bootstrap-datepicker.min.css">
+        <link rel="stylesheet" href="lib/css/style.css">
+        <link rel="stylesheet" href="lib/css/jquery.growl.css">
+        <link rel="stylesheet" href="lib/css/customs.css?v=1581482784">
+        
+        <script type="text/javascript" src="lib/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="lib/js/popper.min.js"></script>
+        <script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="lib/js/bootstrap-datepicker.min.js"></script>
+        <script type="text/javascript" src="lib/js/jquery.growl.js"></script>
+        <script type="text/javascript" src="lib/js/bootbox.min.js"></script>
+        <script type="text/javascript" src="lib/js/main.js?v=1581482784"></script>
+
+    </head>
 <body>
 
     <!--Navigation-->
@@ -61,7 +63,7 @@
             <div class="collapse navbar-collapse" id="navbarSecondary">
                 <ul class="nav nav-pills mb-3 ml-auto" id="pills-tab" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="pills-service-tab" href="use.html" >Dịch vụ</a>
+                        <a class="nav-link active" id="pills-service-tab" href="index.html" >Dịch vụ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " id="pills-price-list-tab" href="bang-gia.html">Bảng giá</a>
@@ -83,93 +85,246 @@
     <div class="container">
         <hr >
         <div class="main-content">
-            <div class="row">
-                <div class="col-lg-8 col-md-8">
-                    <div class="left-content">
-                        <div class="title-nav">
-                            <h1 class="title-main">SMS GAME</h1>
-                            <div class="icon-title">
-                                <a href="#" title><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
-                                <a href="#" title><i class="fa fa-wrench" aria-hidden="true"></i></a>
-                                <a href="#" title><i class="fa fa-window-close" aria-hidden="true"></i></a>        
-                            </div>
-                            <div class="spacer"></div>
+            <div class="content-box">
+                <div class="tab">
+                    <div class="row">
+                        <div class="col-6 col-md-4 text-center">
+                            <button class="tablinks" onclick="openCity(event, 'Garena')">
+                                <img src="lib/img/garena.png" width="60" height="40">
+                            </button>
                         </div>
-                        <div class="content-text">
-                            <div class="item-input">
-                                <p>Đầu số</p>
-                                <select>
-                                    <option>9029 (VIETTEL)</option>
-                                    <option>3 Tháng (435K)</option>
-                                    <option>6 Tháng (870K)</option>
-                                    <option>12 Tháng (1500K)</option>
-                                </select>
-                            </div>
-
-                            <div class="item-input">
-                                <p>Loại Game</p>
-                                <select>
-                                    <option>Garena</option>
-                                    <option>Zing xu</option>
-                                    <option>Vicon</option>
-                                </select>
-                            </div>
-
-                            <div class="item-input">
-                                <p>Cú pháp</p>
-                                <input type="text" name="" placeholder="GARENA 123A">
-                            </div>
-                            <div class="item-input row">
-                                <div class="col-md-2">
-                                    <p>Hướng dẫn</p>
-                                </div>
-                                <div class="col-md-6 tutorial-load-game">
-                                    <p>Đăng nhập vào trang nạp tiền garena: napthe.vn</p>
-                                    <p>Chọn game cần nạp Vidu fifaonline 4 > sms viettel</p>
-                                    <p>Chọn mệnh giá 10k - chọn xử lý thanh toán - > hiện ra 1 mã code</p>
-                                    <p>Chọn game cần nạp Vidu fifaoline 4 > sms viettel</p>
-                                </div>
-                                <div class="col-md-4"></div>
-                            </div>
-                            <div class="item-input row">
-                                <div class="col-md-2">
-                                    <p>Ví Dụ CODE</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="tutorial-load-game example-code">
-                                        <p>GARENA DK10 LQ 4455245471626972650</p>
-                                        <p>VTCG DK10 DK 8632274555</p>
-                                        <p>VNG DK10 JXH5 20190727005597124</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4"></div>
-                            </div>
-                            <div class="item-input">
-                                <p>LƯU Ý: </p>
-                                <p class="note">Cố tình nạp sai cú pháp có thể bị khóa tài khoản mà không hoàn trả số dư.</p>
-                                <div class="spacer"></div>
-                            </div>
-                            <a href="#" title class="pay">Nạp Game</a>
+                        <div class="col-6 col-md-4 text-center">
+                            <button class="tablinks" onclick="openCity(event, 'zingxu')">
+                                <img src="lib/img/zing-xu .png" width="60" height="40">
+                            </button>
+                        </div>
+                        <div class="col-6 col-md-4 text-center">
+                            <button class="tablinks" onclick="openCity(event, 'vcoin')">
+                                <img src="lib/img/vc-in.png" width="60" height="40">
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="right-content">
-                        <div class="title-nav">
-                            <h1 class="title-main">Thông báo</h1>
-                            <div class="icon-title">
-                                <a href="#" title><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
-                                <a href="#" title><i class="fa fa-wrench" aria-hidden="true"></i></a>
-                                <a href="#" title><i class="fa fa-window-close" aria-hidden="true"></i></a>        
+                <div id="Garena" class="tabcontent">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8">
+                            <div class="left-content">
+                                <div class="title-nav">
+                                    <h1 class="title-main">SMS GAME</h1>
+                                    <div class="icon-title">
+                                        <a href="#" title><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+                                        <a href="#" title><i class="fa fa-wrench" aria-hidden="true"></i></a>
+                                        <a href="#" title><i class="fa fa-window-close" aria-hidden="true"></i></a>        
+                                    </div>
+                                    <div class="spacer"></div>
+                                </div>
+                                <div class="content-text">
+                                    <div class="item-input">
+                                        <p>Đầu số</p>
+                                        <select>
+                                            <option>9029 (VIETTEL)</option>
+                                            <option>3 Tháng (435K)</option>
+                                            <option>6 Tháng (870K)</option>
+                                            <option>12 Tháng (1500K)</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="item-input">
+                                        <p>Loại Game</p>
+                                        <select>
+                                            <option>Garena</option>
+                                            <option>Zing xu</option>
+                                            <option>Vicon</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="item-input">
+                                        <p>Cú pháp</p>
+                                        <input type="text" name="" placeholder="GARENA 123A">
+                                    </div>
+                                    <div class="item-input row">
+                                        <div class="col-md-2">
+                                            <p>Hướng dẫn</p>
+                                        </div>
+                                        <div class="col-md-6 tutorial-load-game">
+                                            <p>Đăng nhập vào trang nạp tiền garena: napthe.vn</p>
+                                            <p>Chọn game cần nạp Vidu fifaonline 4 > sms viettel</p>
+                                            <p>Chọn mệnh giá 10k - chọn xử lý thanh toán - > hiện ra 1 mã code</p>
+                                            <p>Chọn game cần nạp Vidu fifaoline 4 > sms viettel</p>
+                                        </div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <div class="item-input row">
+                                        <div class="col-md-2">
+                                            <p>Ví Dụ CODE</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="tutorial-load-game example-code">
+                                                <p>GARENA DK10 LQ 4455245471626972650</p>
+                                                <p>VTCG DK10 DK 8632274555</p>
+                                                <p>VNG DK10 JXH5 20190727005597124</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <div class="item-input">
+                                        <p>LƯU Ý: </p>
+                                        <p class="note">Cố tình nạp sai cú pháp có thể bị khóa tài khoản mà không hoàn trả số dư.</p>
+                                        <div class="spacer"></div>
+                                    </div>
+                                    <a href="#" title class="pay">Nạp Game</a>
+                                </div>
                             </div>
-                            <div class="spacer"></div>
                         </div>
-                        <div class="notification">
-                            <p>Chiết Khấu Nạp Thẻ Game: 10%</p>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="right-content">
+                                <div class="title-nav">
+                                    <h1 class="title-main">Thông báo</h1>
+                                    <div class="icon-title">
+                                        <a href="#" title><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+                                        <a href="#" title><i class="fa fa-wrench" aria-hidden="true"></i></a>
+                                        <a href="#" title><i class="fa fa-window-close" aria-hidden="true"></i></a>        
+                                    </div>
+                                    <div class="spacer"></div>
+                                </div>
+                                <div class="notification">
+                                    <p>Chiết Khấu Nạp Thẻ Game: 10%</p>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                </div>
+
+                <div id="zingxu" class="tabcontent">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row pt-3">
+                                <div class="col-12">
+                                    <div class="form-group mb-2 form-group-xs-12">
+                                        <label for="typeText" class="col-sm-12 col-form-label col-xs-12"><b>Tên Tài Khoản VTC:</b></label>
+                                        <div class="col-sm-10 col-xs-12">
+                                            <input type="text" name="name" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-2 form-group-xs-12">
+                                        <label for="typeText" class="col-sm-12 col-form-label col-xs-12"><b>Mệnh Giá:</b></label>
+                                        <div class="col-sm-10 col-xs-12">
+                                            <select class="form-control" id="typeText" name="status">
+                                                <option value="">Tất cả</option>
+                                                <option value="2" >10,000</option>
+                                                <option value="0" >20,000</option>
+                                                <option value="1" >50,000</option>
+                                                <option value="4" >100,000</option>
+                                                <option value="5" >200,000</option>
+                                                <option value="3" >500,000</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="row">
+                                <div class="table">
+                                    <table class="table">
+                                        <thead class="thead-dark">
+                                            <tr><h1>Thông Tin Hệ Thống</h1></tr>
+                                            <tr>
+                                                <th scope="col">Mệnh Gía</th>
+                                                <th scope="col">Số Lượng</th>
+                                                <th scope="col">CK Mua Vào(%)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="col">100,000</th>
+                                                <th scope="col">100</th>
+                                                <th scope="col">10</th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="col">100,000</th>
+                                                <th scope="col">100</th>
+                                                <th scope="col">10</th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="col">100,000</th>
+                                                <th scope="col">100</th>
+                                                <th scope="col">10</th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div> 
+                    <div class="submit text-left">
+                        <button type="button" class="btn btn-primary">Thanh Toán</button>
+                        <button type="button" class="btn btn-primary">Hủy đơn</button>
+                    </div>
+
+                </div>
+
+                <div id="vcoin" class="tabcontent">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row pt-3">
+                                <div class="col-12">
+                                    <div class="form-group mb-2 form-group-xs-12">
+                                        <label for="typeText" class="col-sm-12 col-form-label col-xs-12"><b>Tên Tài Khoản:</b></label>
+                                        <div class="col-sm-10 col-xs-12">
+                                            <input type="text" name="name" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-2 form-group-xs-12">
+                                        <label for="typeText" class="col-sm-12 col-form-label col-xs-12"><b>Mệnh Giá:</b></label>
+                                        <div class="col-sm-10 col-xs-12">
+                                            <select class="form-control" id="typeText" name="status">
+                                                <option value="">Tất cả</option>
+                                                <option value="2" >10,000</option>
+                                                <option value="0" >20,000</option>
+                                                <option value="1" >50,000</option>
+                                                <option value="4" >100,000</option>
+                                                <option value="5" >200,000</option>
+                                                <option value="3" >500,000</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="row">
+                                <div class="table">
+                                    <table class="table">
+                                        <thead class="thead-dark">
+                                            <tr><h1>Thông Tin Hệ Thống</h1></tr>
+                                            <tr>
+                                                <th scope="col">Mệnh Gía</th>
+                                                <th scope="col">Số Lượng</th>
+                                                <th scope="col">CK Mua Vào(%)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="col">100,000</th>
+                                                <th scope="col">100</th>
+                                                <th scope="col">10</th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div> 
+                    <div class="submit text-left">
+                        <button type="button" class="btn btn-primary">Thanh Toán</button>
+                        <button type="button" class="btn btn-primary">Hủy đơn</button>
                     </div>
                 </div>
             </div>
+
             <div class="content-box">
                 <div class="title-nav">
                     <h1 class="title-main">Cập Nhật Tự Động 10 Giao Dịch Gần Nhất</h1>
@@ -197,13 +352,13 @@
                         <tbody>
                             <tr>
                                 <th>A123</th>
-                                <td>098</td>
-                                <td>100,000</td>
-                                <td>50,000</td>
-                                <td>20 000</td>
-                                <td>Viettel</td>
-                                <td>Abc</td>
-                                <td>Thiếu 50,000</td>
+                                <th>098</th>
+                                <th>100,000</th>
+                                <th>50,000</th>
+                                <th>20,000</th>
+                                <th>Viettel</th>
+                                <th>Abc</th>
+                                <th>Thiếu 50,000</th>
                             </tr>
                         </tbody>
                     </table>
@@ -264,14 +419,14 @@
                     <tbody>
                         <tr>
                             <th scope="row">20/2/2020</th>
-                            <td>098</td>
-                            <td>*911#</td>
-                            <td>10 000</td>
-                            <td>20 000</td>
-                            <td>done</td>
-                            <td></td>
-                            <td>5 000</td>
-                            <td>viettel</td>
+                            <th>098</th>
+                            <th>*911#</th>
+                            <th>10,000</th>
+                            <th>20,000</th>
+                            <th>done</th>
+                            <th></th>
+                            <th>5,000</th>
+                            <th>viettel</th>
                         </tr>
                     </tbody>
                 </table>
@@ -292,29 +447,21 @@
         <p class="text-center gray">COPYRIGHT ©  CORPORATION. ALL RIGHTS RESERVED</p>
     </div>
 </footer>
+
 <script>
-    $('#datefrompicker').datepicker({
-        weekStart: 1,
-        daysOfWeekHighlighted: "",
-        autoclose: true,
-        todayHighlight: true,
-    });
-    $('#datefrompicker').datepicker();
-
-    $('#datetopicker').datepicker({
-        weekStart: 1,
-        daysOfWeekHighlighted: "",
-        autoclose: true,
-        todayHighlight: true,
-    });
-    $('#datetopicker').datepicker();
-
-    $('.datetopicker').datepicker({
-        weekStart: 1,
-        daysOfWeekHighlighted: "",
-        autoclose: true,
-        todayHighlight: true,
-    });
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
 </script>
 
 </body>

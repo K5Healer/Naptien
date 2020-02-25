@@ -18,14 +18,13 @@
     <link rel="stylesheet" href="lib/css/jquery.growl.css">
     <link rel="stylesheet" href="lib/css/customs.css?v=1581482784">
 
-</script>
-<script type="text/javascript" src="lib/js/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="lib/js/popper.min.js"></script>
-<script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="lib/js/bootstrap-datepicker.min.js"></script>
-<script type="text/javascript" src="lib/js/jquery.growl.js"></script>
-<script type="text/javascript" src="lib/js/bootbox.min.js"></script>
-<script type="text/javascript" src="lib/js/main.js?v=1581482784"></script>
+    <script type="text/javascript" src="lib/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="lib/js/popper.min.js"></script>
+    <script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="lib/js/jquery.growl.js"></script>
+    <script type="text/javascript" src="lib/js/bootbox.min.js"></script>
+    <script type="text/javascript" src="lib/js/main.js?v=1581482784"></script>
 </head>
 <body>
 
@@ -91,11 +90,21 @@
     <div class="container home-container">
         <hr >
         <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'Viettel')"><img src="lib/img/i-share-viettel.png" width="60" height="40"></button>
-            <button class="tablinks" onclick="openCity(event, 'Mobi')"><img src="lib/img/mobi.png" width="60" height="40"></button>
-            <button class="tablinks" onclick="openCity(event, 'Vina')"><img src="lib/img/vnp.png" width="60"
+            <div class="row">
+                <div class="col-6 col-md-3 text-center">
+                    <button class="tablinks" onclick="openCity(event, 'Viettel')"><img src="lib/img/i-share-viettel.png" width="60" height="40"></button>
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <button class="tablinks" onclick="openCity(event, 'Mobi')"><img src="lib/img/mobi.png" width="60" height="40"></button>
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <button class="tablinks" onclick="openCity(event, 'Vina')"><img src="lib/img/vnp.png" width="60"
                 height="40"></button>
-            <button class="tablinks" onclick="openCity(event, 'Vietnamobile')"><img src="lib/img/vietnamobile.png" width="60" height="40"></button>
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <button class="tablinks" onclick="openCity(event, 'Vietnamobile')"><img src="lib/img/vietnamobile.png" width="60" height="40"></button>
+                </div>
+            </div>
         </div>
 
         <div id="Viettel" class="tabcontent">
@@ -141,6 +150,7 @@
             </div>
 
             <div class="submit">
+                <button type="button" class="btn btn-primary">Thanh Toán</button>
                 <button type="button" class="btn btn-primary">Tạm dừng</button>
                 <button type="button" class="btn btn-primary">Tiếp tục</button>
                 <button type="button" class="btn btn-primary">Hủy đơn</button>
@@ -190,6 +200,7 @@
                 <div class="col-md-2"></div>
             </div>
             <div class="submit">
+                <button type="button" class="btn btn-primary">Thanh Toán</button>
                 <button type="button" class="btn btn-primary">Tạm dừng</button>
                 <button type="button" class="btn btn-primary">Tiếp tục</button>
                 <button type="button" class="btn btn-primary">Hủy đơn</button>
@@ -239,6 +250,7 @@
                 <div class="col-md-2"></div>
             </div>
             <div class="submit">
+                <button type="button" class="btn btn-primary">Thanh Toán</button>
                 <button type="button" class="btn btn-primary">Tạm dừng</button>
                 <button type="button" class="btn btn-primary">Tiếp tục</button>
                 <button type="button" class="btn btn-primary">Hủy đơn</button>
@@ -288,6 +300,7 @@
                 <div class="col-md-2"></div>
             </div>
             <div class="submit">
+                <button type="button" class="btn btn-primary">Thanh Toán</button>
                 <button type="button" class="btn btn-primary">Tạm dừng</button>
                 <button type="button" class="btn btn-primary">Tiếp tục</button>
                 <button type="button" class="btn btn-primary">Hủy đơn</button>
@@ -308,30 +321,6 @@
         </div>
     </footer>
 </body>
-<script>
-    $('#datefrompicker').datepicker({
-        weekStart: 1,
-        daysOfWeekHighlighted: "",
-        autoclose: true,
-        todayHighlight: true,
-    });
-    $('#datefrompicker').datepicker();
-
-    $('#datetopicker').datepicker({
-        weekStart: 1,
-        daysOfWeekHighlighted: "",
-        autoclose: true,
-        todayHighlight: true,
-    });
-    $('#datetopicker').datepicker();
-
-    $('.datetopicker').datepicker({
-        weekStart: 1,
-        daysOfWeekHighlighted: "",
-        autoclose: true,
-        todayHighlight: true,
-    });
-</script>
 <script>
     function openCity(evt, cityName) {
       var i, tabcontent, tablinks;

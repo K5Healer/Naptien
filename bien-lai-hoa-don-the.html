@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> In Hóa Đơn</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta property="og:image" content="lib/img/tet_2020.png?v=1581482784" />
+    <meta property="image" content="lib/img/tet_2020.png?v=1581482784" />
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="lib/css/style.css">
+    <link rel="stylesheet" href="lib/css/jquery.growl.css">
+    <link rel="stylesheet" href="lib/css/customs.css?v=1581482784">
+    <!--Scripts-->    
+    <script type="text/javascript" src="lib/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="lib/js/popper.min.js"></script>
+    <script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="lib/js/jquery.growl.js"></script>
+    <script type="text/javascript" src="lib/js/bootbox.min.js"></script>
+    <script type="text/javascript" src="lib/js/main.js?v=1581482784"></script>
+</head>
+<body>
+
+    <!--Navigation-->
+    <nav class="navbar mn-nav navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <div id="navbarMain" class=" navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fa fa-home"></i> Trang chủ</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">                                             
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            A Minh (Số dư: <b>12,800đ</b>)
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="info-user.html"><i class="fa fa-user"></i> Thông tin tài khoản</a>
+                            <a class="dropdown-item" href="change-password.html"><i class="fa fa-lock"></i> Thay đổi mật khẩu</a>
+                            <a class="dropdown-item" href="index-dang-nhap.html"><i class="fa fa-sign-out"></i> Đăng xuất</a>
+                        </div>
+                    </li>       
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light pt-3">
+        <div class="container">
+            <a class="navbar-brand" href="user.html"><img src="lib/img/dichvuthe.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSecondary">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSecondary">
+                <ul class="nav nav-pills mb-3 ml-auto" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-service-tab" href="index.html" >Dịch vụ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " id="pills-price-list-tab" href="bang-gia.html">Bảng giá</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " id="pills-history-tab"  href="lich-su.html" >Lịch sử</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " id="pills-guideline-tab"  href="huong-dan.html" >Hướng dẫn</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link " id="pills-news-tab"  href="tin-tuc.html" >Tin tức</a>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <hr >
+        <div id="print">
+            <h1 class="receipt">BIÊN LAI/HÓA ĐƠN</h1>
+            <p>Tên Đại Lý: Nguyễn Khánh</p>
+            <p>Số Điện Thoại: 0987654321</p>
+            <p>Địa Chỉ: 144 Xuân Thủy - Cầu Giấy - Hà Nội</p>
+            <div class="table">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Mã Thẻ</th>
+                            <th scope="col">Tên Đơn Hàng</th>
+                            <th scope="col">Số Seri</th>
+                            <th scope="col">Mệnh Giá</th>
+                            <th scope="col">Thời Gian In</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>A123</th>
+                            <th>Mua Thẻ Cào</th>
+                            <th>123456789</th>
+                            <th>100,000</th>
+                            <th>01/01/2020</th>
+                      </tr>
+                  </tbody>
+                </table>
+            </div>
+        </div>
+      <div class="row">
+        <div class="col-12">
+            <button onclick="PrintElem('print')" class="col-xs-12 btn btn-no-rounded btn-white pull-right ml-1" style="margin-bottom: .5rem;" href="#"><i class="fa fa-print" aria-hidden="true"></i>  IN HÓA ĐƠN</button>
+        </div>
+    </div>
+
+    <br>
+</div>
+
+<footer>
+    <div class="container">
+        <hr>
+        <p class="text-center gray">COPYRIGHT ©  CORPORATION. ALL RIGHTS RESERVED</p>
+    </div>
+</footer>
+</body>
+<script type="text/javascript" src="lib/js/helper.js"></script>
+</html>
