@@ -153,59 +153,51 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-5">
                     <div class="row">
-                        <div class="col-12">
-                            <div class="form-group mb-2 form-group-xs-12">
-                                <label for="findText" class="pt-3 col-sm-12 col-form-label col-xs-12"><b>Số lượng thẻ còn:</b></label>
-                                <div class="col-sm-10 col-xs-12">
-                                    <input type="text" class="form-control" id="findText" placeholder="100" value="" name="phoneNumberOrOrderId">
-                                </div>
-                            </div>
-                            <div class="form-group mb-2 form-group-xs-12">
-                                <label for="typeText" class="col-sm-12 col-form-label col-xs-12"><b>Số lượng các loại thẻ chờ xử lý:</b></label>
-                                <div class="col-sm-10 col-xs-12">
-                                    <input type="text" class="form-control" id="findText" placeholder="100" value="" name="phoneNumberOrOrderId">
-                                </div>
-                            </div>
-                            <div class="form-group mb-2 form-group-xs-12">
-                                <label for="typeText" class="col-sm-12 col-form-label col-xs-12"><b>Số lượng thẻ hệ thống cần:</b></label>
-                                <div class="col-sm-10 col-xs-12">
-                                    <input type="text" class="form-control" id="findText" placeholder="100" value="" name="phoneNumberOrOrderId">
-                                </div>
-                            </div>
+                        <div class="table">
+                            <table class="table">
+                                <thead class="thead-dark">
+                                    <tr><h1>Thông Tin Thẻ Cần Mua Trên Hệ Thống</h1></tr>
+                                    <tr>
+                                        <th scope="col">Nhà Mạng</th>
+                                        <th scope="col">Mệnh Gía</th>
+                                        <th scope="col">Số Lượng</th>
+                                        <th scope="col">CK Mua Vào(%)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="col">Viettel</th>
+                                        <th scope="col">100,000</th>
+                                        <th scope="col">100</th>
+                                        <th scope="col">10</th>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>  
                 </div>
+                <div class="col-md-1"></div>
             </div>    
             <div class="row">
                 <div class="col-12">
                     <a class="col-xs-12 btn btn-no-rounded btn-white pull-right ml-1" style="margin-bottom: .5rem;" href="#"><i class="fa fa-download"></i> IMPOST LIST</a>
                     <div class="form-group mb-2 ml-auto form-group-xs-12">
-                        <div class="col-sm-10  col-xs-12">
-                            <button class="btn btn-my" type="submit"><i class=""></i>Thanh Toán</button>
+                        <div class="submit mt-2 mb-3 px-2">
+                            <button type="button" class="btn btn-primary mb-2">Xuất Thẻ</button>
+                            <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#myModal">Báo Lỗi</button>
                         </div>
                     </div>
                 </div>
                 <hr>
             </div>
-            <div class="row text-center"> 
-                <div class="form-group mb-2 ml-auto form-group-xs-12">
-                    <div class="col-sm-10  col-xs-12">
-                        <button class="btn btn-my" type="submit" style="min-width: 125px;"><i class=""></i>Tạm Dừng</button>
-                    </div>
-                </div>
-                <div class="form-group mb-2 ml-auto form-group-xs-12">
-                    <div class="col-sm-10  col-xs-12">
-                        <button class="btn btn-my" type="submit" style="min-width: 125px;"><i class=""></i>Tiếp Tục</button>
-                    </div>
-                </div>
-                <div class="form-group mb-2 ml-auto form-group-xs-12">
-                    <div class="col-sm-10  col-xs-12">
-                        <button class="btn btn-my" type="submit" style="min-width: 125px;"><i class=""></i>Hủy Đơn</button>
-                    </div>
-                </div>
-            </div>    
+            <div class="submit mb-3 px-2">
+                <button type="button" class="btn btn-primary mb-2">Thanh Toán(Nạp)</button>
+                <button type="button" class="btn btn-primary mb-2">Tạm dừng</button>
+                <button type="button" class="btn btn-primary mb-2">Tiếp Tục</button>
+                <button type="button" class="btn btn-primary mb-2">Hủy đơn</button>
+            </div>   
         </div>
     </div>
     <br>
@@ -235,18 +227,6 @@
                             </select>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="form-group mb-2 form-group-xs-12">
-                        <label for="findText" class="col-sm-12 col-form-label col-xs-12"><b>Số Lượng thẻ còn theo loại:</b></label>
-                        <div class="col-sm-10 col-xs-12">
-                            <input type="text" class="form-control" id="findText" placeholder="100" value="" name="phoneNumberOrOrderId">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
                     <div class="form-group mb-2 form-group-xs-12">
                         <label for="typeText" class="col-sm-12 col-form-label col-xs-12"><b>Mệnh Giá: </b></label>
                         <div class="col-sm-10 col-xs-12">
@@ -261,19 +241,6 @@
                             </select>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="form-group mb-2 form-group-xs-12">
-                        <label for="typeText" class="col-sm-12 col-form-label col-xs-12"><b>Số lượng thẻ còn theo mệnh giá:</b></label>
-                        <div class="col-sm-10 col-xs-12">
-                            <input type="text" class="form-control" id="findText" placeholder="100" value="" name="chietkhau">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2"></div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
                     <div class="form-group mb-2 form-group-xs-12">
                         <label for="findText" class="col-sm-12 col-form-label col-xs-12"><b>Số Lượng thẻ mua:</b></label>
                         <div class="col-sm-10 col-xs-12">
@@ -281,24 +248,42 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="form-group mb-2 form-group-xs-12">
-                        <label for="typeText" class="col-sm-12 col-form-label col-xs-12"><b>Chiết Khấu:</b></label>
-                        <div class="col-sm-10 col-xs-12">
-                            <input type="text" class="form-control" id="findText" placeholder="15%" value="" name="chietkhau">
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="table">
+                            <table class="table">
+                                <thead class="thead-dark">
+                                    <tr><h1>Thông Tin Thẻ Còn Trên Hệ Thống</h1></tr>
+                                    <tr>
+                                        <th scope="col">Nhà Mạng</th>
+                                        <th scope="col">Mệnh Gía</th>
+                                        <th scope="col">Số Lượng</th>
+                                        <th scope="col">CK Mua Vào(%)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="col">Viettel</th>
+                                        <th scope="col">100,000</th>
+                                        <th scope="col">100</th>
+                                        <th scope="col">10</th>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                    </div>
+                    </div>  
                 </div>
-                <div class="col-md-2"></div>
-                
+                <div class="col-md-1"></div>
             </div>
+            
             <br>
             <div class="form-group mb-2 ml-auto form-group-xs-6">
-                <div class="button">
-                    <button class="btn btn-my" type="submit"><i class=""></i>Xuất Thẻ</button>
-                    <button class="btn btn-my" type="submit" data-toggle="modal" data-target="#myModal"><i class=""></i>Báo Lỗi</button>
+                <div class="submit mt-2 mb-3 px-2">
+                    <button type="button" class="btn btn-primary mb-2">Xuất Thẻ</button>
+                    <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#myModal">Báo Lỗi</button>
                 </div>
             </div>
+            
             <hr>
             <div class="row">
                 <div class="col-12">
@@ -307,28 +292,12 @@
                 </div>
 
             </div>
-            <div class="row text-center"> 
-                <div class="form-group form-group-xs-12">
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <button class="btn btn-my" type="submit" style="min-width: 130px;"><i class=""></i>Thanh Toán</button>
-                    </div>
-                </div>
-                <div class="form-group mb-2 ml-auto form-group-xs-12">
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <button class="btn btn-my" type="submit" style="min-width: 130px;"><i class=""></i>Tạm Dừng</button>
-                    </div>
-                </div>
-                <div class="form-group mb-2 ml-auto form-group-xs-12">
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <button class="btn btn-my" type="submit" style="min-width: 130px;"><i class=""></i>Tiếp Tục</button>
-                    </div>
-                </div>
-                <div class="form-group mb-2 ml-auto form-group-xs-12">
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <button class="btn btn-my" type="submit" style="min-width: 130px;"><i class=""></i>Hủy Đơn</button>
-                    </div>
-                </div>
-            </div>     
+            <div class="submit mb-3 px-2">
+                <button type="button" class="btn btn-primary mb-2">Thanh Toán(Nạp)</button>
+                <button type="button" class="btn btn-primary mb-2">Tạm dừng</button>
+                <button type="button" class="btn btn-primary mb-2">Nạp thẻ</button>
+                <button type="button" class="btn btn-primary mb-2">Hủy đơn</button>
+            </div>   
         </div>
     </div>
 </div>
