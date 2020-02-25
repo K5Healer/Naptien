@@ -108,7 +108,7 @@
 
             <div id="Viettel" class="tabcontent">
                 <div class="row mt-5 px-2">
-                    <h1>Nạp Viettel (FTTH/ADSL/Next TV) Có MyViettel</h1>
+                    <h1>Nạp thuê bao di động Viettel (FTTH/ADSL/Next TV) Có MyViettel</h1>
                 </div>
                 <div class="row mt-3 px-2">
                     <div class="col-md-2"></div>
@@ -118,6 +118,14 @@
                     <div class="col-md-6">
                         <input type="tel" class="form-control" name="phone">
                     </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row mt-3 px-2">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-primary">Check</button>
+                    </div>
+                    <div class="col-md-6"><h4>Nếu là sim chuyển mạng giữ số thì check vào</h4></div>
                     <div class="col-md-2"></div>
                 </div>
                 <div class="row mt-3 px-2">
@@ -154,8 +162,11 @@
                     <div class="col-md-2">
                         <label>Mật Khẩu MyViettel/OTP:</label>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4 mt-1">
                         <input type="password" class="form-control" name="pass">
+                    </div>
+                    <div class="col-md-2 mt-1">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Tạo TK</button>
                     </div>
                     <div class="col-md-2"></div>
                 </div>
@@ -179,18 +190,34 @@
                     </div>
                     <div class="col-md-2"></div>
                 </div>
+                <div class="row mt-3 px-2">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2">
+                        <label>Chiết Khấu (%) Của Bạn Hiện Tại Là:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" class="form-control" name="number" placeholder="20" disabled="">
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row mt-3 px-2">
+                    <label>Ghi chú:</label>
+                        <div class="col-12">
+                            <textarea id="sms-game" rows="5" style="width: 100%" placeholder="Sắp tới có khuyến mại khủng!!!!" disabled=""></textarea>
+                        </div>
+                </div>
 
-                <div class="submit mt-5 mb-3 px-2">
-                    <button type="button" class="btn btn-primary">Thanh Toán</button>
-                    <button type="button" class="btn btn-primary">Tạm dừng</button>
-                    <button type="button" class="btn btn-primary">Tiếp tục</button>
-                    <button type="button" class="btn btn-primary">Hủy đơn</button>
+                <div class="submit mt-3 mb-3 px-2">
+                    <button type="button" class="btn btn-primary mt-2">Thanh Toán</button>
+                    <button type="button" class="btn btn-primary mt-2">Tạm dừng</button>
+                    <button type="button" class="btn btn-primary mt-2">Tiếp tục</button>
+                    <button type="button" class="btn btn-primary mt-2">Hủy đơn</button>
                 </div>
             </div>
 
             <div id="Mobi" class="tabcontent">
                 <div class="row mt-5 px-2">
-                    <h1>Nạp thẻ MobiPhone qua app MyMobiPhone</h1>
+                    <h1>Nạp thuê bao di động MobiPhone qua app MyMobiPhone</h1>
                 </div>
                 <div class="row mt-3 px-2">
                     <div class="col-md-2"></div>
@@ -200,6 +227,14 @@
                     <div class="col-md-6">
                         <input type="tel" class="form-control" name="phone">
                     </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row mt-3 px-2">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-primary">Check</button>
+                    </div>
+                    <div class="col-md-6"><h4>Nếu là sim chuyển mạng giữ số thì check vào</h4></div>
                     <div class="col-md-2"></div>
                 </div>
                 <div class="row mt-3 px-2">
@@ -234,10 +269,13 @@
                 <div class="row mt-3 px-2">
                     <div class="col-md-2"></div>
                     <div class="col-md-2">
-                        <label>Mật Khẩu MyMB/OTP:</label>
+                        <label>Mật Khẩu MyMobiPhone/OTP:</label>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4 mt-1">
                         <input type="password" class="form-control" name="pass">
+                    </div>
+                    <div class="col-md-2 mt-1">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Tạo TK</button>
                     </div>
                     <div class="col-md-2"></div>
                 </div>
@@ -251,7 +289,7 @@
                     </div>
                     <div class="col-md-2"></div>
                 </div>
-                <div class="row mt-3 mb-5 px-2">
+                <div class="row mt-3 px-2">
                     <div class="col-md-2"></div>
                     <div class="col-md-2">
                         <label>Chiết Khấu Ưu Tiên(%):</label>
@@ -261,17 +299,34 @@
                     </div>
                     <div class="col-md-2"></div>
                 </div>
-                <div class="submit mt-5 mb-3 px-2">
-                    <button type="button" class="btn btn-primary">Thanh Toán</button>
-                    <button type="button" class="btn btn-primary">Tạm dừng</button>
-                    <button type="button" class="btn btn-primary">Tiếp tục</button>
-                    <button type="button" class="btn btn-primary">Hủy đơn</button>
+                <div class="row mt-3 px-2">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2">
+                        <label>Chiết Khấu (%) Của Bạn Hiện Tại Là:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" class="form-control" name="number" placeholder="20" disabled="">
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row mt-3 px-2">
+                    <label>Ghi chú:</label>
+                        <div class="col-12">
+                            <textarea id="sms-game" rows="5" style="width: 100%" placeholder="Sắp tới có khuyến mại khủng!!!!" disabled=""></textarea>
+                        </div>
+                </div>
+
+                <div class="submit mt-3 mb-3 px-2">
+                    <button type="button" class="btn btn-primary mt-2">Thanh Toán</button>
+                    <button type="button" class="btn btn-primary mt-2">Tạm dừng</button>
+                    <button type="button" class="btn btn-primary mt-2">Tiếp tục</button>
+                    <button type="button" class="btn btn-primary mt-2">Hủy đơn</button>
                 </div>
             </div>
 
             <div id="Vina" class="tabcontent">
                 <div class="row mt-5 px-2">
-                    <h1>Nạp thẻ Vina qua app MyVina Phone</h1>
+                    <h1>Nạp thuê bao di động Vina qua app MyVina Phone</h1>
                 </div>
                 <div class="row mt-3 px-2">
                     <div class="col-md-2"></div>
@@ -281,6 +336,14 @@
                     <div class="col-md-6">
                         <input type="tel" class="form-control" name="phone">
                     </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row mt-3 px-2">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-primary">Check</button>
+                    </div>
+                    <div class="col-md-6"><h4>Nếu là sim chuyển mạng giữ số thì check vào</h4></div>
                     <div class="col-md-2"></div>
                 </div>
                 <div class="row mt-3 px-2">
@@ -315,10 +378,13 @@
                 <div class="row mt-3 px-2">
                     <div class="col-md-2"></div>
                     <div class="col-md-2">
-                        <label>Mật Khẩu MyVina/OTP:</label>
+                        <label>Mật Khẩu MyVinaPhone/OTP:</label>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4 mt-1">
                         <input type="password" class="form-control" name="pass">
+                    </div>
+                    <div class="col-md-2 mt-1">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Tạo TK</button>
                     </div>
                     <div class="col-md-2"></div>
                 </div>
@@ -332,7 +398,7 @@
                     </div>
                     <div class="col-md-2"></div>
                 </div>
-                <div class="row mt-3 mb-5 px-2">
+                <div class="row mt-3 px-2">
                     <div class="col-md-2"></div>
                     <div class="col-md-2">
                         <label>Chiết Khấu Ưu Tiên(%):</label>
@@ -342,17 +408,33 @@
                     </div>
                     <div class="col-md-2"></div>
                 </div>
-                <div class="submit mt-5 mb-3 px-2">
-                    <button type="button" class="btn btn-primary">Thanh Toán</button>
-                    <button type="button" class="btn btn-primary">Tạm dừng</button>
-                    <button type="button" class="btn btn-primary">Tiếp tục</button>
-                    <button type="button" class="btn btn-primary">Hủy đơn</button>
+                <div class="row mt-3 px-2">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2">
+                        <label>Chiết Khấu (%) Của Bạn Hiện Tại Là:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" class="form-control" name="number" placeholder="20" disabled="">
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row mt-3 px-2">
+                    <label>Ghi chú:</label>
+                        <div class="col-12">
+                            <textarea id="sms-game" rows="5" style="width: 100%" placeholder="Sắp tới có khuyến mại khủng!!!!" disabled=""></textarea>
+                        </div>
+                </div>
+                <div class="submit mt-3 mb-3 px-2">
+                    <button type="button" class="btn btn-primary mt-2">Thanh Toán</button>
+                    <button type="button" class="btn btn-primary mt-2">Tạm dừng</button>
+                    <button type="button" class="btn btn-primary mt-2">Tiếp tục</button>
+                    <button type="button" class="btn btn-primary mt-2">Hủy đơn</button>
                 </div>
             </div>
 
             <div id="Vietnamobile" class="tabcontent">
                 <div class="row mt-5 px-2">
-                    <h1>Nạp thẻ Vietnamobile qua app MyVietnamobile</h1>
+                    <h1>Nạp thuê bao di động Vietnamobile qua app MyVietnamobile</h1>
                 </div>
                 <div class="row mt-3 px-2">
                     <div class="col-md-2"></div>
@@ -362,6 +444,14 @@
                     <div class="col-md-6">
                         <input type="tel" class="form-control" name="phone">
                     </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row mt-3 px-2">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-primary">Check</button>
+                    </div>
+                    <div class="col-md-6"><h4>Nếu là sim chuyển mạng giữ số thì check vào</h4></div>
                     <div class="col-md-2"></div>
                 </div>
                 <div class="row mt-3 px-2">
@@ -398,8 +488,11 @@
                     <div class="col-md-2">
                         <label>Mật Khẩu MyVietnamobile/OTP:</label>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4 mt-1">
                         <input type="password" class="form-control" name="pass">
+                    </div>
+                    <div class="col-md-2 mt-1">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Tạo TK</button>
                     </div>
                     <div class="col-md-2"></div>
                 </div>
@@ -413,7 +506,7 @@
                     </div>
                     <div class="col-md-2"></div>
                 </div>
-                <div class="row mt-3 mb-5 px-2">
+                <div class="row mt-3 px-2">
                     <div class="col-md-2"></div>
                     <div class="col-md-2">
                         <label>Chiết Khấu Ưu Tiên(%):</label>
@@ -423,17 +516,59 @@
                     </div>
                     <div class="col-md-2"></div>
                 </div>
-                <div class="submit mt-5 mb-3 px-2">
-                    <button type="button" class="btn btn-primary">Thanh Toán</button>
-                    <button type="button" class="btn btn-primary">Tạm dừng</button>
-                    <button type="button" class="btn btn-primary">Tiếp tục</button>
-                    <button type="button" class="btn btn-primary">Hủy đơn</button>
+                <div class="row mt-3 mb-3 px-2">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2">
+                        <label>Chiết Khấu (%) Của Bạn Hiện Tại Là:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" class="form-control" name="number" placeholder="20" disabled="">
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row mt-3 px-2">
+                    <label>Ghi chú:</label>
+                        <div class="col-12">
+                            <textarea id="sms-game" rows="5" style="width: 100%" placeholder="Sắp tới có khuyến mại khủng!!!!" disabled=""></textarea>
+                        </div>
+                </div>
+
+                <div class="submit mt-3 mb-3 px-2">
+                    <button type="button" class="btn btn-primary mt-2">Thanh Toán</button>
+                    <button type="button" class="btn btn-primary mt-2">Tạm dừng</button>
+                    <button type="button" class="btn btn-primary mt-2">Tiếp tục</button>
+                    <button type="button" class="btn btn-primary mt-2">Hủy đơn</button>
                 </div>
             </div>
         </div>
 
         <div class="container mt-5">
             <button type="button" class="btn btn-primary"><a href="lich-su.html" style="color: white !important;">Lịch Sử</a></button>
+        </div>
+
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>Tạo Tài Khoản</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row mt-3 px-2">
+                            <div class="col-md-2 mt-2">
+                                <label>SĐT:</label>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="tel" class="form-control" name="phone">
+                            </div>
+                            <div class="col-md-4">
+                                <button type="button" class="btn btn-primary">Gửi OTP</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
 <footer>

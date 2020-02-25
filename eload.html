@@ -84,7 +84,7 @@
         <hr>
         <div class="row pt-3">
             <div class="col-12">
-                <h4 class="pb-3">Thêm số cần nạp</h4>
+                <h4 class="pb-3">Đây là dịch vụ thanh toán nạp tiền trả trước, trả sau cho thuê bao di động bằng sim đa năng, chuyển tiền cho sim đa năng cùng cấp</h4>
                 <p>Vui lòng nhập số điện thoại:</p>
 
                 <div class="table-responsive">
@@ -95,6 +95,7 @@
                             <th class="text-center" style="width: 15%;">Số điện thoại</th>
                             <th class="text-center">Nhà mạng</th>
                             <th class="text-center">Loại</th>
+                            <th class="text-center">Chiết Khấu(%)</th>
                             <th class="text-center" style="width: 13%;">Số tiền</th>
                             <th class="text-center">Thanh toán</th>
                             <th class="text-center">Thao tác</th>
@@ -117,7 +118,11 @@
                                 <select style="width: 130px;" class="form-control paidType">
                                     <option value="0">Trả trước</option>
                                     <option value="1">Trả Sau</option>
+                                    <option value="2">Sim đa năng</option>
                                 </select>
+                            </td>
+                            <td class="align-middle">
+                                <input type="text" name="" placeholder="20" disabled="" class="form-control">
                             </td>
                             <td class="align-middle"><input style="width: 130px;" value="0" onkeyup="vinaEload.calculateDiscount($(this))" type="text" class="form-control text-right amount" placeholder="..." onkeypress='return event.charCode >= 48 && event.charCode <= 57'></td>
                             <td class="align-middle">

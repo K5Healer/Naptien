@@ -66,6 +66,9 @@
     background: #eee;
     color: #036;
 }
+textarea::placeholder{
+  color: black !important;
+}
 
 div.button button{
   outline: none;
@@ -105,4 +108,10 @@ button.btn-my a:hover{
     border-radius: 5px;
     margin: 5px 0;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+  table th {
+    min-width: 150px;
+  }
 }
