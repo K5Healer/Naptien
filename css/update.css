@@ -109,9 +109,20 @@ button.btn-my a:hover{
     margin: 5px 0;
     cursor: pointer;
 }
-
+.btn-blue{
+  background: #007bff !important;
+}
+.btn-red{
+  background: red !important;
+}
+th button{
+  margin-top: 5px;width: 25px;
+}
+th button:hover{
+  background: black;color: white;
+}
 @media only screen and (max-width: 767px) {
   table th {
-    min-width: 150px;
+    min-width: 80px;
   }
 }
