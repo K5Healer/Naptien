@@ -121,6 +121,27 @@ th button{
 th button:hover{
   background: black;color: white;
 }
+
+.nap-tien img{
+  width: 100%;height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 767px) {
   table th {
     min-width: 80px;
