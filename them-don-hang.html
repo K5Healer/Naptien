@@ -55,7 +55,7 @@
         </nav>
     
     <p style="width: 100%;padding: 10px 0;background-color: #f5cb9f;text-align: center;font-size: 18px;">
-        <strong>Tăng CK Bắn TKC Viettel thành <span style="color: red;">23% </span></strong>
+        <strong>Tăng CK Bắn TKC thành <span style="color: red;">23% </span></strong>
     </p>
 
         <nav class="navbar navbar-expand-lg navbar-light pt-3">
@@ -85,6 +85,7 @@
                 </div>
             </div>
         </nav>
+
     <div class="container">
         <hr>
         <div class="row pt-3">
@@ -107,56 +108,47 @@
                         </tr>
                         </thead>
                         <tbody class="share-viettel-list">
-                                                <tr class="align-middle share-viettel-item share-viettel-cloud">
-                            <td class="align-middle text-center textNumberColumn">1</td>
-                            <td class="align-middle text-center">
-                                <input onkeyup="shareViettel.readPhoneNumber($(this))" type="tel" class="form-control phoneNumber" placeholder="090.." style="width:138px;" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
-                            </td>
-                            <td class="align-middle telecom text-center">
-                                <b>Unknow</b>
-                                <input  type="hidden" value="0"/>
-                            </td>
-                            <td class="align-middle text-center">
-                                <select name="" class="form-control telecomCMGS" style="min-width: 100px;" onchange="shareViettel.changeCmgs($(this))" id="">
-                                    <option value="">Không</option>
-                                    <option value="VTT">Viettel</option>
-                                </select>
-                            </td>
-                            <td class="align-middle">
-                                <select name="" class="form-control text-right amount"  style="width: 130px;" onchange="shareViettel.calculateDiscount($(this))" id="">
-                                                                            <option value="20,000">20,000</option>
-                                                                            <option value="30,000">30,000</option>
-                                                                            <option value="40,000">40,000</option>
-                                                                            <option value="50,000">50,000</option>
-                                                                            <option value="60,000">60,000</option>
-                                                                            <option value="70,000">70,000</option>
-                                                                            <option value="80,000">80,000</option>
-                                                                            <option value="90,000">90,000</option>
-                                                                            <option value="100,000">100,000</option>
-                                                                            <option value="200,000">200,000</option>
-                                                                            <option value="500,000">500,000</option>
-                                                                            <option value="1,000,000">1,000,000</option>
-                                                                    </select>
-                            </td>
-                            <td class="align-middle" style="width: 130px;">
-                                <input value="15,400" type="text" style="width: 140px;" class="form-control text-right realAmount" readonly>
-                                <input  value="0" type="hidden" class="form-control text-right discount" readonly>
-                            </td>
-                            <td class="align-middle text-center"><a onclick="shareViettel.removeRows($(this))" href="javascript:" class="pl-2 pr-2 remove-row"> <i class="fa fa-close red"></i></a></td>
-
-                        </tr>
+                            <tr class="align-middle share-viettel-item share-viettel-cloud">
+                                <td class="align-middle text-center textNumberColumn">1</td>
+                                <td class="align-middle text-center">
+                                    <input type="tel" class="form-control phoneNumber" placeholder="090.." style="width:138px;">
+                                </td>
+                                <td class="align-middle telecom text-center">
+                                    <b>Unknow</b>
+                                    <input  type="hidden" value="0"/>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <select name="" class="form-control telecomCMGS" style="min-width: 100px;" onchange="shareViettel.changeCmgs($(this))" id="">
+                                        <option value="">Không</option>
+                                        <option value="VTT">Viettel</option>
+                                    </select>
+                                </td>
+                                <td class="align-middle">
+                                    <select name="" class="form-control text-right amount"  style="width: 130px;" onchange="shareViettel.calculateDiscount($(this))" id="">
+                                        <option value="20,000">20,000</option>
+                                        <option value="30,000">30,000</option>
+                                        <option value="40,000">40,000</option>
+                                        <option value="50,000">50,000</option>
+                                        <option value="60,000">60,000</option>
+                                        <option value="70,000">70,000</option>
+                                        <option value="80,000">80,000</option>
+                                        <option value="90,000">90,000</option>
+                                        <option value="100,000">100,000</option>
+                                        <option value="200,000">200,000</option>
+                                        <option value="500,000">500,000</option>
+                                        <option value="1,000,000">1,000,000</option>
+                                    </select>
+                                </td>
+                                <td class="align-middle" style="width: 130px;">
+                                    <input value="15,400" type="text" style="width: 140px;" class="form-control text-right realAmount" readonly>
+                                    <input  value="0" type="hidden" class="form-control text-right discount" readonly>
+                                </td>
+                                <td class="align-middle text-center"><a href="#"  class="pl-2 pr-2 remove-row"><i class="fa fa-close red"></i></a></td>
+                            </tr>
                         </tbody>
                         <tfoot>
                         <tr>
-
                             <td colspan="2"><button  onclick="shareViettel.addRows()"   class="btn btn-no-rounded  pull-center ml-1"><i class="fa fa-plus"></i> Thêm số</button></td>
-                            
-                                    
-                                        
-                                        
-                                        
-                                    
-                                
                             <td colspan="2" class="no-bg  text-center">Tổng:</td>
                             <td class="no-bg  text-right"><b class="totalAmount">0</b></td>
                             <td class="no-bg  text-right"><b class="totalRealAmount green">0</b></td>
@@ -178,26 +170,15 @@
                         <form class="form-inline mb-3">
                             <div class="form-group mb-2">
                                 <label for="findText" class="col-form-label"><b>Mật khẩu BH:</b></label>
-
                                 <input type="password" class="form-control  passwordSales" value="">
-
                             </div>
                             <div class="form-group ml-2 mb-2">
-
                                 <button class="btn btn-no-rounded "  id="post_data" type="button"><i class="fa fa-arrow-right"></i> Nạp tiền</button>
-
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
-
-            
-                
-                    
-                    
-                
-            
             <p><b>Lưu ý:</b></p>
             <ul>
                 <li>Đây là dịch vụ Chia Sẽ Tài Khoản Chính VIETTEL qua 136. Thuê bao nhận tiền:</li>
@@ -209,15 +190,13 @@
                 <ul style="list-style-type: circle">
                     <li>Tải mẫu file tại đây : <label class="btn btn-no-rounded btn-green btn-file btn-download">
                             <i class="fa fa-file"></i>
-                            <a href="/assets/v1/f/excel/filemau_sharemoney.xlsx">Bắn TKC Viettel</a>
-                        </label>
+                            <a href="#">Bắn TKC</a>
                     </li>
                 </ul>
-                                    <li><b>Chiết khấu của dịch vụ Chia Sẽ Tài Khoản Chính Hiện Tại là 23%.</b></li>
-                    <li>Mệnh giá nạp tiền phải là bội số của 10.000đ</li>
-                    <li>Với mệnh giá 30,000 vnd, chiết khấu giảm 2% so với thông thường, tức chỉ còn 21%</li>
-                    
-                            </ul>
+                <li><b>Chiết khấu của dịch vụ Chia Sẽ Tài Khoản Chính Hiện Tại là 23%.</b></li>
+                <li>Mệnh giá nạp tiền phải là bội số của 10.000đ</li>
+                <li>Với mệnh giá 30,000 vnd, chiết khấu giảm 2% so với thông thường, tức chỉ còn 21%</li>
+            </ul>
         </div>
     </div>
     <footer>
@@ -253,3 +232,6 @@
 </body>
 <script src="/assets/v1/f/my/custom-date.js"></script>
 </html>
+
+
+

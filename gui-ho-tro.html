@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Gửi Hỗ Trợ</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                
+        <meta property="og:image" content="lib/img/tet_2020.png?v=1581482784" />
+        <meta property="image" content="lib/img/tet_2020.png?v=1581482784" />
+        <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+
+        <link rel="stylesheet" type="text/css" href="css/update.css">
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="lib/css/bootstrap-datepicker.min.css">
+        <link rel="stylesheet" href="lib/css/style.css">
+        <link rel="stylesheet" href="lib/css/jquery.growl.css">
+        <link rel="stylesheet" href="lib/css/customs.css?v=1581482784">
+        
+        </script>
+        <script type="text/javascript" src="lib/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="lib/js/popper.min.js"></script>
+        <script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="lib/js/bootstrap-datepicker.min.js"></script>
+        <script type="text/javascript" src="lib/js/jquery.growl.js"></script>
+        <script type="text/javascript" src="lib/js/bootbox.min.js"></script>
+        <script type="text/javascript" src="lib/js/main.js?v=1581482784"></script>
+    </head>
+    <body>
+        
+        <!--Navigation-->
+        <nav class="navbar mn-nav navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <div id="navbarMain" class=" navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><i class="fa fa-home"></i> Trang chủ</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">                                             
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                A Minh (Số dư: <b>12,800đ</b>)
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="info-user.html"><i class="fa fa-user"></i> Thông tin tài khoản</a>
+                                <a class="dropdown-item" href="change-password.html"><i class="fa fa-lock"></i> Thay đổi mật khẩu</a>
+                                <a class="dropdown-item" href="index-dang-nhap.html"><i class="fa fa-sign-out"></i> Đăng xuất</a>
+                            </div>
+                        </li>       
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <p style="width: 100%;padding: 10px 0;background-color: lightblue;text-align: center;font-size: 18px;">
+            <a style="color: red!important;" href="https://www.naptien.biz/user/helps/tips-viettel"> 
+                <strong> Dịch Vụ Chia Sẻ Tài Khoản Chính Cho Sim</strong><br>
+                <span style="color: red;"> Chỉ Sử Dụng Cho Thuê Bao Trả Trước Và Không Nhận Được Khuyến Mại Từ Nhà Mạng </span>
+            </a>  
+        </p>
+        <!--Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light pt-3">
+            <div class="container">
+                <a class="navbar-brand" href="user.html"><img src="lib/img/dichvuthe.png" width="130" height="80"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSecondary">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSecondary">
+                    <ul class="nav nav-pills mb-3 ml-auto" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-service-tab" href="index.html" >Dịch vụ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " id="pills-price-list-tab" href="bang-gia.html">Bảng giá</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " id="pills-history-tab"  href="lich-su.html" >Lịch sử</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " id="pills-guideline-tab"  href="huong-dan.html" >Hướng dẫn</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link " id="pills-news-tab"  href="tin-tuc.html" >Tin tức</a>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container home-container">
+            <hr >
+            <div class="text-center">
+                <h1>GỬI HỖ TRỢ</h1>
+            </div>
+            <div class="row mt-3 px-2">
+                <div class="col-md-2"></div>
+                <div class="col-md-2">
+                    <label>Tiêu đề gửi hỗ trợ:</label>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" name="text">
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row mt-3 px-2">
+                <div class="col-md-2"></div>
+                <div class="col-md-2">
+                    <label>Ghi chú:</label>
+                </div>
+                <div class="col-md-6">
+                    <textarea id="sms-game" rows="5" style="width: 100%" ></textarea>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row mt-3 px-2">
+                <div class="col-md-2"></div>
+                <div class="col-md-2">
+                    <label>Chèn Hình Ảnh Đính Kèm:</label>
+                </div>
+                <div class="col-md-6">
+                    <input type="file" name="file">
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row mt-3 px-2">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 text-center">
+                    <button type="button" class="btn btn-primary mt-3">Gửi</button>
+                    <button type="button" class="btn btn-primary mt-3">Hủy Bỏ</button>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+
+        
+        <div class="container">
+            <div class="lichsu-btkc">
+                <button><a href="lich-su.html">Lịch Sử Giao Dịch</a></button>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="container">
+                <hr>
+                <p class="text-center gray">COPYRIGHT ©  CORPORATION. ALL RIGHTS RESERVED</p>
+            </div>
+        </footer>
+    </body>
+</html>

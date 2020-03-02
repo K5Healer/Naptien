@@ -204,9 +204,6 @@ textarea.deductDiscountPercentExcel {
     .home-container .mb-4, .home-container .my-4 {
         margin-bottom: 0.5rem!important;
     }
-    .home-container [class*="col-"] {
-        padding: 0 4px;
-    }
     .home-container .pt-3, .home-container .py-3 {
         padding-top: 0rem!important;
     }
